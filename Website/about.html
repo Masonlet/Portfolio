@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mason L'Etoile Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/output.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="aboutPage">
+    <aside>
+        <a href="contacts.html"><img class="hoverColor" src="images/email.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/masonletoile/" target="_blank"><img class="hoverColor" src="images/linkedin.png" alt="Linkedin"></a>
+        <a href="https://github.com/Masonlet" target="_blank"><img class="hoverColor" src="images/github.png" alt="Github"></a>
+    </aside>
+    <div id="containers">
+        <header>
+            <h1>About Me</h1>
+            <p><a href="home.html" class="hoverColor">Return to home page</a></p>
+        </header>
+        <div id="containerOne">
+            <nav>
+                <div class=line></div>
+                <p>Personal Information</p>
+                <div class=line></div>
+            </nav>
+            <main>
+                <p id="Output"></p>
+            </main>
+        </div>
+        <div id="containerTwo">
+            <nav>
+                <div class=line></div>
+                <p>Work History</p>
+                <div class=line></div>
+            </nav>
+            <nav>
+                <div class=line></div>
+                <a id="job1" class="hoverColor" onclick="printRight('job1');">Job1</a>
+                <div class=line></div>
+                <a id="job2" class="hoverColor" onclick="printRight('job2');">Job2</a>
+                <div class=line></div>
+                <a id="job3" class="hoverColor" onclick="printRight('job3');">Job3</a>
+                <div class=line></div>
+            </nav>
+            <main>
+                <p id="Output2"></p>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
