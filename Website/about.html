@@ -11,44 +11,40 @@
 </head>
 <body id="aboutPage">
     <aside>
-        <a href="contacts.html"><img class="hoverColor" src="images/email.png" alt="Email"></a>
-        <a href="https://www.linkedin.com/in/masonletoile/" target="_blank"><img class="hoverColor" src="images/linkedin.png" alt="Linkedin"></a>
-        <a href="https://github.com/Masonlet" target="_blank"><img class="hoverColor" src="images/github.png" alt="Github"></a>
+        <a href="contacts.html"><img class="hoverColor" src="img/email.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/masonletoile/" target="_blank"><img class="hoverColor" src="img/linkedin.png" alt="Linkedin"></a>
+        <a href="https://github.com/Masonlet" target="_blank"><img class="hoverColor" src="img/github.png" alt="Github"></a>
     </aside>
-    <div id="containers">
+    <main>
         <header>
             <h1>About Me</h1>
             <p><a href="home.html" class="hoverColor">Return to home page</a></p>
         </header>
-        <div id="containerOne">
-            <nav>
-                <div class=line></div>
-                <p>Personal Information</p>
-                <div class=line></div>
-            </nav>
-            <main>
-                <p id="Output"></p>
-            </main>
+        <div id="containers">
+            <div id="containers">
+                <div id="containerOne">
+                    <nav>
+                        <a>Personal Information</a>
+                    </nav>
+                    <div id="output">
+                        <p id="Output"></p>
+                    </div>
+                </div>
+                <div id="containerTwo">
+                    <nav>
+                        <a>Work History</a>
+                    </nav>
+                    <nav>
+                        <a id="job1" class="hoverColor" onclick="printRight('job1');">Job1</a>
+                        <a id="job2" class="hoverColor" onclick="printRight('job2');">Job2</a>
+                        <a id="job3" class="hoverColor" onclick="printRight('job3');">Job3</a>
+                    </nav>
+                    <div id="output">
+                        <p id="Output2"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="containerTwo">
-            <nav>
-                <div class=line></div>
-                <p>Work History</p>
-                <div class=line></div>
-            </nav>
-            <nav>
-                <div class=line></div>
-                <a id="job1" class="hoverColor" onclick="printRight('job1');">Job1</a>
-                <div class=line></div>
-                <a id="job2" class="hoverColor" onclick="printRight('job2');">Job2</a>
-                <div class=line></div>
-                <a id="job3" class="hoverColor" onclick="printRight('job3');">Job3</a>
-                <div class=line></div>
-            </nav>
-            <main>
-                <p id="Output2"></p>
-            </main>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
