@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="contactsPage">
     <main>
         <header>
             <h1>Contact Me</h1>
@@ -20,24 +20,24 @@
                 <nav>
                     <a>Email Form</a>
                 </nav>
-                <main>
-                    <p>Your Email:<input class="emailInput" type="text"></p>
-                    <p>Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="emailInput" type="text"></p>
-                    <p>Message:&nbsp;&nbsp;&nbsp;&nbsp;<textarea class="emailInput" type="text"></textarea></p>
+                <div id="outputDiv">
+                    <p>Your Email:</p><input class="emailInput" type="text">
+                    <p>Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><input class="emailInput" type="text">
+                    <p>Message:&nbsp;&nbsp;&nbsp;&nbsp;</p><textarea class="emailInput" type="text"></textarea>
                     <br>
-                    <button onclick="alert('Email sent!')" class="emailSubmit">Send Email</button>
-                </main>
+                    <button id ="emailButton"onclick="alert('Email sent!')" class="emailSubmit">Send Email</button>
+                </div>
             </div>
             <div id="containerTwo">
                 <nav>
                     <a>Links</a>
                 </nav>
-                <main>
-                    <a href="mailto:masonletoile@hotmail.com"><p class="hoverColor">Email: masonletoile@hotmail.com</p></a>
-                    <a href="https://www.linkedin.com/in/masonletoile/" target="_blank"><p class="hoverColor">Linkedin: https://www.linkedin.com/in/masonletoile/</p></a>
-                    <a href="https://github.com/Masonlet" target="_blank"><p class="hoverColor">Github: https://github.com/Masonlet</p></a>
-                    <a href="#"><p class="hoverColor">Resume: N/A</p></a>
-                </main>
+                <div id="linkButtons">
+                    <a href="mailto:masonletoile@hotmail.com" class="hoverColor"title="masonletoile@hotmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/masonletoile/" class="hoverColor" target="_blank"title="https://www.linkedin.com/in/masonletoile/">Linkedin</a>
+                    <a href="https://github.com/Masonlet" class="hoverColor" target="_blank" title="https://github.com/Masonlet">Github</a>
+                    <a href="#" class="hoverColor" title="Click to download"download="pdf/resume.pdf">Resume</a>
+                </div>
             </div>
         </div>
      </main>
