@@ -9,20 +9,15 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-.hoverColor:hover {
-    background: rgba(0, 0, 0, 0.25) !important;
+.hoverColor:hover, #outputDiv button:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
     z-index: 1;
     cursor: grab;
 }
 
 @keyframes gradient {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 0%;
-    }
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 0%; }
 }
 
 /* Aside Styling */
@@ -36,13 +31,13 @@ aside img {
     margin-left: 10px;
 }
 
-    aside img, #grid img {
-        padding: 5px;
-        width: 5vw;
-        border: 2px solid #004d4d;
-        border-radius: 40px;
-        background: rgba(0, 0, 0, 0.10);
-    }
+aside img, #grid img {
+    padding: 5px;
+    width: 5vw;
+    border: 2px solid #004d4d;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.10);
+}
 
 /* Page Styling */
 body {
@@ -98,20 +93,21 @@ nav {
     column-gap: 10px;
 }
 
-nav a, footer a {
+nav a, footer a, #outputDiv button, #linkButtons a {
+    width: 100%;
     font-size: 1.5vw;
+    line-height: 2.5vw;
     border: 2px solid #004d4d;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 0 2.5vw;
     background: rgba(0, 0, 0, 0.25);
-    width: 100%;
     text-align: center;
 }
 
-#outputDiv, #grid, #output, #output2, #grid p {
+#outputDiv, #outputDiv p, grid, #output, #output2, #grid p, #outputDiv input, #outputDiv textArea {
     font-size: 1vw;
+    line-height: 1vw;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
 }
 
 #grid a, #grid a img {
@@ -131,14 +127,26 @@ footer {
 /* Contact Page */
 input, textarea, .emailSubmit {
     color: white;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.1);
     width: 100%;
+    padding: 10px;
 }
 
 textarea {
     text-align: left;
+    height: 10vh;
 }
 
-.emailSubmit {
-    width: 80%;
+.emailInput {
+    margin: 1vh 0;
 }
+
+#linkButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+#linkButtons a {
+    margin-top: 1vh;
+}
+
