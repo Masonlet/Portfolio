@@ -9,41 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body id="aboutPage">
+<body>
     <aside>
         <a href="contacts.html"><img class="hoverColor" src="img/email.png" alt="Email"></a>
         <a href="https://www.linkedin.com/in/masonletoile/" target="_blank"><img class="hoverColor" src="img/linkedin.png" alt="Linkedin"></a>
         <a href="https://github.com/Masonlet" target="_blank"><img class="hoverColor" src="img/github.png" alt="Github"></a>
     </aside>
-    <main>
+    <main id="aboutPage">
         <header>
             <h1>About Me</h1>
             <p><a href="home.html" class="hoverColor">Return to home page</a></p>
         </header>
-        <div id="containers">
-            <div id="containers">
-                <div id="containerOne">
-                    <nav>
-                        <a>Personal Information</a>
-                    </nav>
-                    <div id="outputDiv">
-                        <p id="output"></p>
-                    </div>
+        <div id="sections">
+            <section id="leftSection">
+                <nav id="leftNav">
+                    <a>Personal Information</a>
+                </nav>
+                <div id="leftOutputDiv">
+                    <p id="leftOutput"></p>
                 </div>
-                <div id="containerTwo">
-                    <nav>
-                        <a>Work History</a>
-                    </nav>
-                    <nav>
-                        <a id="job1" class="hoverColor" onclick="printRight('job1');">Courtland Landscape & Grounds</a>
-                        <a id="job2" class="hoverColor" onclick="printRight('job2');">Canadian Tire</a>
-                        <a id="job3" class="hoverColor" onclick="printRight('job3');">Walmart</a>
-                    </nav>
-                    <div id="outputDiv">
-                        <p id="output2"></p>
-                    </div>
+            </section>
+            <section id="rightSection">
+                <nav id="rightNav">
+                    <a>Experience</a>
+                </nav>
+                <div id="rightOutputDiv">
+                    <p id="rightOutput"></p>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 </body>
