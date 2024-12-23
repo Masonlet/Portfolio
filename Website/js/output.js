@@ -2,13 +2,13 @@
 let activeRight = false;
 let leftString = "";
 let rightString = "";
-const TYPING_SPEED = 8;
+const TYPING_SPEED = 20;
 
 window.onload = function () { 
     if (document.getElementById("homePage")) {
         if (sessionStorage.getItem("aboutLoaded") === "true") {
-            document.getElementById("output").innerHTML = getAbout("about");
-            document.getElementById("output").innerHTML += createFooter();
+            document.getElementById("leftOutput").innerHTML = getAbout("about") + createFooter();
+            setTimeout(() => { document.getElementById("footerButton").style.opacity = 1; }, 50);
         } else {
             printLeft("about");
             sessionStorage.setItem("aboutLoaded", true);
@@ -16,7 +16,7 @@ window.onload = function () {
     }
     else if (document.getElementById("aboutPage")) {
         printLeft("life");
-        printRight("job1");
+        printRight("fanshawe");
         sessionStorage.setItem("life", true);
         sessionStorage.setItem("job1", true);
     }
@@ -24,32 +24,24 @@ window.onload = function () {
 
 function getJob(selectedJob) {
     switch (selectedJob) {
-        case "job1":
-            return "Insert some text about first job description, job role, skills required for job, etc etc..."
-        case "job2":
-            return "Insert some text about second job description, job role, skills required for job, etc etc...";
-        case "job3":
-            return "Insert some text about third job description, job role, skills required for job, etc etc...";
+        case "fanshawe":
+            return `Throughout my time at fanshawe I have completed multiple projects that have spanned across various programs and languages, giving me a good hands-on experience in different areas of computer science.<br>
+            These projects have allowed me to translate theoretical knowledge into practical solutions for real-world problems, ranging from creating CRUD applications to developing mathematical expression evaluators.<br>
+            Throughout this process, I have gained valuable experience with tools such as Visual Studio, Visual Studio Code, SQL Server Management Studio (SSMS), and have strengthened my understanding of fundamnetal concepts in debugging and problem solving.`
     }
 }
-function updateJob(selectedJob) {
-    document.getElementById("job1").style.backgroundColor = selectedJob ? "rgba(0, 0, 0, 0.15)" : "transparent";
-    document.getElementById("job2").style.backgroundColor = selectedJob ? "rgba(0, 0, 0, 0.15)" : "transparent";
-    document.getElementById("job3").style.backgroundColor = selectedJob ? "rgba(0, 0, 0, 0.15)" : "transparent";
-}
-
 function getAbout(selectedSection) {
     switch (selectedSection) {
         case "life":
-            return `I was born in London, ontario and have lived in the surrounding area my entire life. I have traveled to every province in Canada and have been around a good chunk of America.<br>
-                From a young age, I have always been extremely interested in technology, computers, and gaming. I've always had basic knowledge of how to work on computers by building them from a young age.<br>
-                I dabled in programming in highschool, but I was more interested in automotive and mechanical work so I decided to start my college career at Fanshawe in their automotive technician program. After doing this for a year I realized mechanical work was more of a hobby than a career. I decided to flip the boat from the physcial work of a mechanic and pursue Computer Programming.<br>
-                I enjoy programming more then I ever imagined I would. Now that I truly had the chance to dive into coding I have been so intrigued by the complexity and the problem solving that comes with it. I am now in my second year of the program and I am loving every second of it.<br>`;
+            return `I was born in London, Ontario and have lived in the surrounding area my entire life.<br>
+                From a young age, I have always been extremely interested in technology, computers, and gaming. I've had a good understanding of how to work on computers from a young age by building them.<br>
+                I dabled in programming in highschool, but I was more interested in automotive careers so I decided to start my college career at Fanshawe in their automotive technician program. After doing this for a year I realized mechanical work was more of a hobby than a career. I decided to flip the boat from the physcial work of a mechanic and pursue Computer Programming, and I've enjoyed programming more then I ever imagined I would. <br>
+                Now that I truly had the chance to dive into coding I have been so intrigued by the complexity and the problem solving that comes with it. I am now in my second year of the program and I am loving every second of it.<br>`;
         case "about":
-            return `Hello and welcome to my portfolio. I am currently a student at Fanshawe College, pursuing a degree in Computer Programming and Analysis.<br>
-                I have a strong passion for learning, problem solving and have been completely deeply immersed in the fascinating and complex world that surrounds coding and programming.<br>
-                While I have not yet commited to a specific specialization, my current objective is to broaden my knowledge and skills across as many areas as possible.<br>
-                Thank you very taking the time to explore my portfolio, I hope you enjoy learning about my projects and getting to know me.<br>`;
+            return `Welcome to my portfolio.<br>
+                I am deeply invested in learning, problem-solving and exploring the fascinating world of programming.<br>
+                While I have not yet commited to a specific specialization, my current focus is broadening my knowledge and skills across as many areas as possible.<br>
+                I hope you enjoy learning about my projects and getting to know me.<br>`;
         case "skills":
             return `Front-end languages<br>- HTML<br>- CSS<br>- JavaScript<br><br>Back-end languages<br>- Java<br>- C++<br>- C#<br>- SQL`;
     }
@@ -61,35 +53,65 @@ function updateAbout(selectedSection) {
 }
 
 function createFooter() {
-    return `<footer><a id="button" class="hoverColor" style="margin-top:4vh;display:flex; font-size: 2vw;border: 2px solid #004d4d;border-radius: 6%;background: rgba(0, 0, 0, 0.10); width: 100%; justify-content: center;" href="about.html">Click for more information</a></footer>`;
+    return `<footer id ="footerButton"><a id="button" class="hoverColor" href="about.html">Click for more information about me</a></footer>`;
 }
 
-function printRight(outputType) {
-    if(!activeRight){
+function createImage(selectedImage) {
+    switch (selectedImage) { 
+        case "html":
+            return ` <img src="img/languages/html.png" alt="HTML">`;
+        case "css":
+            return ` <img src="img/languages/css.png" alt="CSS">`
+        case "js":
+            return ` <img src="img/languages/js.png" alt="JavaScript">`
+    }
+}
+
+async function printRight(outputType) {
+    if (!activeRight) {
+        await new Promise(resolve => {
+            const checkInterval = setInterval(() => {
+                if (!activeLeft) {
+                    clearInterval(checkInterval);
+                    resolve();
+                }
+            }, 1);
+        });
+
         rightString = getJob(outputType);
-        updateJob(outputType);
+
+        const outputDiv = document.getElementById("rightOutput");
 
         if (sessionStorage.getItem(`${outputType}Seen`) === "true") {
-            document.getElementById("output2").innerHTML = rightString;
+            outputDiv.innerHTML = rightString;
             activeRight = false;
         }
         else {
-            document.getElementById("output2").innerHTML = "";
+            outputDiv.innerHTML = "";
             activeRight = true;
             output(true, 0);
             sessionStorage.setItem(`${outputType}Seen`, "true");
         }
     }
 }
-function printLeft(outputType) {
-    if(!activeLeft){
+async function printLeft(outputType) {
+    if (!activeLeft) {
         leftString = getAbout(outputType);
+        if (document.getElementById("homePage")) updateAbout(leftString);
+
+        const outputDiv = document.getElementById("leftOutput");
 
         if (sessionStorage.getItem(`${outputType}Seen`) === "true") {
-            document.getElementById("output").innerHTML = leftString;
+            outputDiv.innerHTML = leftString;
+            if (outputType === "about") {
+                setTimeout(() => {
+                    outputDiv.innerHTML += createFooter();
+                    document.getElementById("footerButton").style.opacity = 1;
+                }, 50);
+            }
         }
         else {
-            document.getElementById("output").innerHTML = "";
+            outputDiv.innerHTML = "";
             activeLeft = true;
             output(false, 0);
             sessionStorage.setItem(`${outputType}Seen`, "true");
@@ -99,13 +121,19 @@ function printLeft(outputType) {
 
 //Function to add the next character to the output text
 function output(printRight, index){
-    const outputDiv = printRight ? document.getElementById("output2") : document.getElementById("output");
+    const outputDiv = printRight ? document.getElementById("rightOutput") : document.getElementById("leftOutput");
     const currentString = printRight ? rightString : leftString;
 
     //End recursive function if we are at the end of the string
     if (index >= currentString.length){
         if (printRight) activeRight = false;
-        else activeLeft = false;
+        else {
+            activeLeft = false;
+            if (document.getElementById("homePage")) {
+                outputDiv += createFooter();
+                setTimeout(() => { document.getElementById("footerButton").style.opacity = 1; }, 50);
+            }
+        }
         return true;
     }
 
