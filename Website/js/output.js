@@ -6,12 +6,12 @@ const TYPING_SPEED = 20;
 
 window.onload = function () { 
     if (document.getElementById("homePage")) {
-        if (sessionStorage.getItem("aboutLoaded") === "true") {
+        if (sessionStorage.getItem("aboutSeen") === "true") {
             document.getElementById("leftOutput").innerHTML = getAbout("about") + createFooter();
             setTimeout(() => { document.getElementById("footerButton").style.opacity = 1; }, 50);
         } else {
             printLeft("about");
-            sessionStorage.setItem("aboutLoaded", true);
+            sessionStorage.setItem("aboutSeen", true);
         }
     }
     else if (document.getElementById("aboutPage")) {
@@ -43,13 +43,13 @@ function getAbout(selectedSection) {
                 While I have not yet commited to a specific specialization, my current focus is broadening my knowledge and skills across as many areas as possible.<br>
                 I hope you enjoy learning about my projects and getting to know me.<br>`;
         case "skills":
-            return `Front-end languages<br>- HTML<br>- CSS<br>- JavaScript<br><br>Back-end languages<br>- Java<br>- C++<br>- C#<br>- SQL`;
+            return `<div id="skillsDiv">Front-end languages<br><div class="imageOut">${createImage("html")}<br>${createImage("css")}<br>${createImage("js")}</div><br>Back-end languages<br><div class="imageOut">${createImage("java")}<br>${createImage("cpp")}<br>${createImage("cs")}</div></div>`;
     }
 }
 function updateAbout(selectedSection) {
-    document.getElementById("about").style.backgroundColor = selectedSection ? "rgba(0, 0, 0, 0.15)" : "transparent";
-    document.getElementById("skills").style.backgroundColor = selectedSection ? "rgba(0, 0, 0, 0.15)" : "transparent";
-    document.getElementById("contacts").style.backgroundColor = selectedSection ? "rgba(0, 0, 0, 0.15)" : "transparent";
+    document.getElementById("about").style.backgroundColor = selectedSection == "about" ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 0.25)";
+    document.getElementById("skills").style.backgroundColor = selectedSection == "skills" ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 0.25)";
+    document.getElementById("contacts").style.backgroundColor = selectedSection == "contacts" ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 0.25)";
 }
 
 function createFooter() {
@@ -59,11 +59,17 @@ function createFooter() {
 function createImage(selectedImage) {
     switch (selectedImage) { 
         case "html":
-            return ` <img src="img/languages/html.png" alt="HTML">`;
+            return `<img src="img/languages/html.png" alt="HTML" class="language">`;
         case "css":
-            return ` <img src="img/languages/css.png" alt="CSS">`
+            return `<img src="img/languages/css.png" alt="CSS" class="language">`
         case "js":
-            return ` <img src="img/languages/js.png" alt="JavaScript">`
+            return `<img src="img/languages/js.png" alt="JavaScript" class="language">`
+        case "java":
+            return `<img src="img/languages/java.png" alt="Java" class="language">`
+        case "cpp":
+            return `<img src="img/languages/cpp.png" alt="C++" class="language">`
+        case "cs":
+            return `<img src="img/languages/cs.png" alt="C#" class="language">`
     }
 }
 
@@ -97,7 +103,9 @@ async function printRight(outputType) {
 async function printLeft(outputType) {
     if (!activeLeft) {
         leftString = getAbout(outputType);
-        if (document.getElementById("homePage")) updateAbout(leftString);
+        if (document.getElementById("homePage")) {
+            updateAbout(outputType);
+        }
 
         const outputDiv = document.getElementById("leftOutput");
 
@@ -130,7 +138,7 @@ function output(printRight, index){
         else {
             activeLeft = false;
             if (document.getElementById("homePage")) {
-                outputDiv += createFooter();
+                outputDiv.innerHTML  += createFooter();
                 setTimeout(() => { document.getElementById("footerButton").style.opacity = 1; }, 50);
             }
         }
