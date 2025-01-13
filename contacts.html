@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mason L'Etoile Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/output.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main id="contactPage">
+        <header>
+            <h1>Contact Me</h1>
+            <p><a href="home.html" class="hoverColor">Return to home page</a></p>
+        </header>
+        <div id="sections">
+            <section id="leftSection">
+                <nav id="leftNav">
+                    <a>Email Form</a>
+                </nav>
+                <div id="leftOutputDiv">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="38b2bd3c-be91-4e04-a8b1-f14c23876ce4"> 
+                        <input type="hidden" name="redirectTo" value="https://masonletoile.com/contacts.html">
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="emailInput" required>
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="emailInput" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="emailInput" required></textarea>
+
+                        <input type="text" name="honeypot" style="display: none;">
+
+                        <input type="submit" value="Send Email" class="hoverColor emailSubmit">
+                    </form>
+                </div>
+            </section>
+            <section id="contactSection">
+                <nav id="rightNav">
+                    <a>Links</a>
+                </nav>
+                <div id="linkButtons">
+                    <a href="mailto:masonletoile@hotmail.com" class="hoverColor" title="masonletoile@hotmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/masonletoile/" class="hoverColor" target="_blank" title="https://www.linkedin.com/in/masonletoile/">Linkedin</a>
+                    <a href="https://github.com/Masonlet" class="hoverColor" target="_blank" title="https://github.com/Masonlet">Github</a>
+                    <a href="#" class="hoverColor" title="Click to download" download="pdf/resume.pdf">Resume</a>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
