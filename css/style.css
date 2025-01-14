@@ -8,8 +8,8 @@
 
 /* Universal Styling */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     color: white;
     list-style: none;
@@ -83,6 +83,10 @@ textarea {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+#rightOutputDiv a {
+    text-align: center;
 }
 
 .imageOut{
@@ -495,11 +499,15 @@ textarea {
         font-size: 1.8vmin;
         line-height: 2.2vmin;
     }
-    #leftOutputDiv, #rightOutputDiv #footerButton {
+    #leftOutputDiv, #rightOutputDiv, #footerButton {
         margin-top: 4vh;
     }
     #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
         border-radius: 25px;
+    }
+    #rightOutputDiv {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     input, textarea, .emailSubmit {
@@ -597,6 +605,10 @@ textarea {
     #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
         border-radius: 15px;
     }
+    #rightOutputDiv {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     input, textarea, .emailSubmit {
         width: 100%;
@@ -686,11 +698,15 @@ textarea {
         font-size: 1vw;
         line-height: 1.2vw;
     }
-    #leftOutputDiv, #rightOutputDiv #footerButton {
+    #leftOutputDiv, #rightOutputDiv, #footerButton {
         margin-top: 4vh;
     }
     #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
         border-radius: 20px;
+    }
+    #rightOutputDiv {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     input, textarea, .emailSubmit {
@@ -711,8 +727,8 @@ textarea {
     }
 
     .language {
-        width: 8vw !important;
-        height: 10vw !important;
+        width: 6vw !important;
+        height: 8vw !important;
         padding: 10px;
     }
     .imageOut, #skillsDiv {
