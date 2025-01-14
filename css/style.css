@@ -85,7 +85,7 @@ textarea {
     flex-direction: column;
 }
 
-#rightOutputDiv a {
+#rightOutputDiv a, #leftOutputDiv a {
     text-align: center;
 }
 
