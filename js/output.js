@@ -1,11 +1,11 @@
 ﻿const TYPING_SPEED = 20;
 const IMAGE_PATHS = {
-    html: `img/languages/html.png`,
-    css: `img/languages/css.png`,
-    js: `img/languages/js.png`,
-    java: `img/languages/java.png`,
-    cpp: `img/languages/cpp.png`,
-    cs: `img/languages/cs.png`
+    html: `img/Languages/html.png`,
+    css: `img/Languages/css.png`,
+    js: `img/Languages/js.png`,
+    java: `img/Languages/java.png`,
+    cpp: `img/Languages/cpp.png`,
+    cs: `img/Languages/cs.png`
 };
 const SECTIONS = [`about`, `skills`, `contacts`];
 
