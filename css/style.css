@@ -20,8 +20,11 @@
 
 /* Layout Styling */
 html {
+    background: black;
+}
+body {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background: linear-gradient(var(--gradient--colours));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
@@ -88,9 +91,11 @@ textarea {
 #rightOutputDiv a, #leftOutputDiv a {
     text-align: center;
 }
+#leftOutputDiv {
+    width: 100%;
+}
 #leftOutputDiv p {
     text-align: left !important;
-    width: 100% !important;
 }
 
 .imageOut{
@@ -156,13 +161,15 @@ textarea {
         width: 90vw;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin: 0 auto 5vh;
     }
     #leftSection, #rightSection {
         display: flex;
+    }
+    #leftSection {
         flex-direction: column;
-        height: 66%;
+        height: 55%;
     }
     #rightSection {
         flex-direction: column-reverse;
@@ -173,8 +180,10 @@ textarea {
     }
 
     #leftNav, #rightNav {
-        margin: 2vh 0 0;
         column-gap: 5px;
+    }
+    #rightNav {
+        margin: 2vh 0 0;
     }
     #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 4vw;
@@ -185,8 +194,8 @@ textarea {
     }
 
     #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
-        font-size: 3vw;
-        line-height: 4vw;
+        font-size: 2.75vmin;
+        line-height: 3.75vmin;
     }
     #leftOutputDiv, #rightOutputDiv, #footerButton {
         margin: 2vh auto 0;

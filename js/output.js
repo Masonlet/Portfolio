@@ -1,4 +1,4 @@
-﻿const TYPING_SPEED = 20;
+const TYPING_SPEED = 20;
 const IMAGE_PATHS = {
     html: `img/Languages/html.png`,
     css: `img/Languages/css.png`,
@@ -25,6 +25,9 @@ const leftContent = {
             Throughout this process, I have gained valuable experience with tools such as Visual Studio, Visual Studio Code, SQL Server Management Studio (SSMS), 
             and have strengthened my understanding of fundamental concepts in debugging and problem solving.`,
     skills: createSkills()
+}
+function createImage(type) {
+    return `<img src="${IMAGE_PATHS[type]}" alt="${type}" class="language">`
 }
 function createSkills() {
     const frontEndImages = [`html`, `css`, `js`].map(createImage).join(``);
@@ -54,11 +57,10 @@ function preloadImages() {
         })
     );
 }
-function createImage(type) {
-    return `<img src="${IMAGE_PATHS[type]}" alt="${type}" class="language">`
-}
 
 window.onload = function () {
+    sessionStorage.clear();
+
     const homePage = document.getElementById(`homePage`);
 
     if (homePage) {
