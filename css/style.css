@@ -88,6 +88,10 @@ textarea {
 #rightOutputDiv a, #leftOutputDiv a {
     text-align: center;
 }
+#leftOutputDiv p {
+    text-align: left !important;
+    width: 100%;
+}
 
 .imageOut{
     display: flex;
