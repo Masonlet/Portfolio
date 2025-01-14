@@ -505,7 +505,7 @@ textarea {
     #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
         border-radius: 25px;
     }
-    #rightOutputDiv {
+    #rightOutputDiv, #leftOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -605,7 +605,7 @@ textarea {
     #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
         border-radius: 15px;
     }
-    #rightOutputDiv {
+    #rightOutputDiv, #leftOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -704,7 +704,7 @@ textarea {
     #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
         border-radius: 20px;
     }
-    #rightOutputDiv {
+    #rightOutputDiv, #leftOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
