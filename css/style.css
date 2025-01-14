@@ -91,7 +91,7 @@ textarea {
 #rightOutputDiv a, #leftOutputDiv a {
     text-align: center;
 }
-#leftOutputDiv {
+#leftOutputDiv, #leftOutput {
     width: 100%;
 }
 #leftOutputDiv p {
