@@ -12,7 +12,7 @@ const content = {
                 I am deeply invested in learning, problem-solving and exploring the fascinating world of programming.
                 While I have not yet committed to a specific specialization, my current focus is broadening my knowledge and skills across as many areas as possible.
                 I hope you enjoy learning about my projects and getting to know me.<br><br>
-                Throughout my time at fanshawe I have completed multiple projects that have spanned across various programs and languages,
+                Throughout my time at Fanshawe I have completed multiple projects that have spanned a   cross various programs and languages,
                 giving me a good hands-on experience in different areas of computer science.
                 These projects have allowed me to translate theoretical knowledge into practical solutions for real-world problems,
                 ranging from creating CRUD applications to developing mathematical expression evaluators.<br><br>
