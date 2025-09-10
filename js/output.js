@@ -5,9 +5,9 @@ const HOME_IMAGE_PATHS = {
     java: `img/Languages/java.png`, cpp: `img/Languages/cpp.png`, cs: `img/Languages/cs.png`
 };  
 const SECTIONS = [`about`, `skills`, `contacts`];
-const output = { leftOutput: null, rightOutput: null }
+const output = { firstOutput: null, secondOutput: null }
 const content = {
-    left: {
+    first: {
         about: `Welcome to my portfolio.<br><br>
                 I am deeply invested in learning, problem-solving and exploring the fascinating world of programming.
                 While I have not yet committed to a specific specialization, my current focus is broadening my knowledge and skills across as many areas as possible.
@@ -19,15 +19,15 @@ const content = {
                 Throughout this process, I have gained valuable experience with tools such as Visual Studio, Visual Studio Code, SQL Server Management Studio (SSMS), 
                 and have strengthened my understanding of fundamental concepts in debugging and problem solving.`
     },
-    right: {}
+    second: {}
 }
 
 //State Functions
 const createState = () => ({
-    typingLeft: false,
-    typingRight: false,
-    leftString: ``,
-    rightString: ``,
+    typingfirst: false,
+    typingsecond: false,
+    firstString: ``,
+    secondString: ``,
     typingIndices: {
         about: 0
     },
@@ -48,14 +48,14 @@ function updateState(key, value) {
 
 //Helper Functions
 function createSkills() {
-    if(content.left.skills) return content.left.skills;
+    if(content.first.skills) return content.first.skills;
 
     const createImage = type => `<img src="${HOME_IMAGE_PATHS[type]}" alt="Logo of ${type}" class="language" loading="lazy">`;
     const frontEndImages = [`html`, `css`, `js`].map(createImage).join(``);
     const backEndImages = [`java`, `cpp`, `cs`].map(createImage).join(``);
 
-    content.left.skills = `<div id="skillsDiv">Front-end languages<div class = "imageOut">${frontEndImages}</div>Back-end languages<div class ="imageOut">${backEndImages}</div></div>`;
-    return content.left.skills;
+    content.first.skills = `<div id="skillsDiv">Front-end languages<div class = "imageOut">${frontEndImages}</div>Back-end languages<div class ="imageOut">${backEndImages}</div></div>`;
+    return content.first.skills;
 }
 
 function preloadImages(images) {
@@ -74,8 +74,8 @@ function preloadImages(images) {
 }
 
 //Typewriter Functions
-async function printContent(outputType, isRight = false) {
-    const side = isRight ? `right` : `left`;
+async function printContent(outputType, isSecond = false) {
+    const side = isSecond ? `second` : `first`;
 
     const outputDiv = document.getElementById(`${side}Output`);
     if (!outputDiv) {

@@ -37,7 +37,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-aside {
+#headerNav {
     position: fixed;
 }
 #sections {
@@ -45,15 +45,15 @@ aside {
 }
 
 /* Nav Styling */
-#leftNav, #rightNav {
+#firstNav, #secondNav {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
-#rightNav {
+#secondNav {
     flex-direction: column;
 }
-#leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+#firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
     width: 100%;
     background: var(--dark-bg);
     text-align: center;
@@ -67,12 +67,12 @@ input, textarea {
 }
 
 /* Image Styling */
-aside img, #rightOutputDiv img, #leftOutputDiv img {
+#headerNav img, #secondOutputDiv img, #firstOutputDiv img {
     background: var(--light-bg);
 }
 
 /* Font Styling */
-#leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv, .emailSubmit {
+#firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv, .emailSubmit {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -96,16 +96,16 @@ textarea {
     flex-direction: column;
 }
 
-#rightOutputDiv a, #leftOutputDiv a {
+#secondOutputDiv a, #firstOutputDiv a {
     text-align: center;
 }
-#leftOutputDiv, #leftOutput {
+#firstOutputDiv, #firstOutput {
     width: 100%;
 }
-#leftOutputDiv p {
+#firstOutputDiv p {
     text-align: left !important;
 }
-#leftOutputDiv a p {
+#firstOutputDiv a p {
     text-align: center !important;
 }
 
@@ -142,7 +142,7 @@ textarea {
         line-height: 9.5vw;
         letter-spacing: 3px;
     }
-    header p, #rightOutputDiv a p {
+    header p, #secondOutputDiv a p {
         font-size: 3vw; 
         line-height: 5vw;
     }
@@ -153,11 +153,11 @@ textarea {
         padding: 2.5px;
     }
 
-    aside {
+    #headerNav {
         top: 5vh;
         right: 5%;
     }
-    aside img, #rightOutputDiv img, #leftOutputDiv img {
+    #headerNav img, #secondOutputDiv img, #firstOutputDiv img {
         width: 12.5vw;
         height: 12.5vw;
         padding: 2px;
@@ -175,14 +175,14 @@ textarea {
         justify-content: space-evenly;
         margin: 0 auto 5vh;
     }
-    #leftSection, #rightSection {
+    #firstSection, #secondSection {
         display: flex;
     }
-    #leftSection {
+    #firstSection {
         flex-direction: column;
         height: 55%;
     }
-    #rightSection {
+    #secondSection {
         flex-direction: column-reverse;
     }
     #contactSection {
@@ -190,13 +190,13 @@ textarea {
         flex-direction: column;
     }
 
-    #leftNav, #rightNav {
+    #firstNav, #secondNav {
         column-gap: 5px;
     }
-    #rightNav {
+    #secondNav {
         margin: 2vh 0 0;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 4vw;
         line-height: 4vw;
         border: 2px solid var(--colour-primary);
@@ -204,17 +204,17 @@ textarea {
         padding: 1.5vw;
     }
 
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 2.75vmin;
         line-height: 3.75vmin;
     }
-    #leftOutputDiv, #rightOutputDiv, #footerButton {
+    #firstOutputDiv, #secondOutputDiv, #footerButton {
         margin: 2vh auto 0;
     }
-    #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
+    #firstOutputDiv a, #firstOutputDiv a img, #secondOutputDiv a, #secondOutputDiv a img {
         border-radius: 10px;
     }
-    #rightOutputDiv, #leftOutputDiv {
+    #secondOutputDiv, #firstOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -256,7 +256,7 @@ textarea {
         line-height: 9.5vmin;
         letter-spacing: 3px;
     }
-    header p, #rightOutputDiv a p {
+    header p, #secondOutputDiv a p {
         font-size: 3vmin;
         line-height: 5vmin;
     }
@@ -267,11 +267,11 @@ textarea {
         border: 2px solid var(--colour-primary);
     }
 
-    aside {
+    #headerNav {
         top: 5vh;
         right: 5%;
     }
-    aside img, #rightOutputDiv img, #leftOutputDiv img {
+    #headerNav img, #secondOutputDiv img, #firstOutputDiv img {
         padding: 2px;
         width: 10vmin;
         height: 10vmin;
@@ -289,23 +289,23 @@ textarea {
         justify-content: space-evenly;
         margin: 0 auto 5vh;
     }
-    #leftSection, #rightSection {
+    #firstSection, #secondSection {
         display: flex;
         flex-direction: column;
         width: 90vw;
     }
-    #leftSection {
+    #firstSection {
         height: 67%;
     }
-    #rightSection {
+    #secondSection {
         flex-direction: column-reverse;
     }
 
-    #leftNav, #rightNav {
+    #firstNav, #secondNav {
         margin: 2vh 0 0;
         column-gap: 5px;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 3.5vmin;
         line-height: 3.5vmin;
         border: 4px solid var(--colour-primary);
@@ -313,17 +313,17 @@ textarea {
         padding: 1.5vmin;
     }
 
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 3vmin;
         line-height: 3vmin;
     }
-    #leftOutputDiv, #rightOutputDiv, #footerButton {
+    #firstOutputDiv, #secondOutputDiv, #footerButton {
         margin: 2vh auto 0;
     }
-    #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
+    #firstOutputDiv a, #firstOutputDiv a img, #secondOutputDiv a, #secondOutputDiv a img {
         border-radius: 10px;
     }
-    #rightOutputDiv, #leftOutputDiv {
+    #secondOutputDiv, #firstOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -367,7 +367,7 @@ textarea {
         line-height: 9.5vw;
         letter-spacing: 3px;
     }
-    header p, #rightOutputDiv a p {
+    header p, #secondOutputDiv a p {
         font-size: 3vw;
         line-height: 5vw;
     }
@@ -378,11 +378,11 @@ textarea {
         border: 2px solid var(--colour-primary);
     }
 
-    aside {
+    #headerNav {
         top: 5vh;
         right: 5%;
     }
-    aside img, #rightOutputDiv img, #leftOutputDiv img {
+    #headerNav img, #secondOutputDiv img, #firstOutputDiv img {
         padding: 2px;
         width: 10vw;
         height: 10vw;
@@ -400,23 +400,23 @@ textarea {
         justify-content: space-evenly;
         margin: 0 auto 5vh;
     }
-    #leftSection, #rightSection {
+    #firstSection, #secondSection {
         display: flex;
         flex-direction: column;
         width: 90vw;
     }
-    #leftSection {
+    #firstSection {
         height: 67%;
     }
-    #rightSection {
+    #secondSection {
         flex-direction: column-reverse;
     }
 
-    #leftNav, #rightNav {
+    #firstNav, #secondNav {
         margin: 2vh 0 0;
         column-gap: 5px;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 3.5vw;
         line-height: 3.5vw;
         border: 4px solid var(--colour-primary);
@@ -424,17 +424,17 @@ textarea {
         padding: 1.5vw;
     }
 
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 3vw;
         line-height: 3vw;
     }
-    #leftOutputDiv, #rightOutputDiv, #footerButton {
+    #firstOutputDiv, #secondOutputDiv, #footerButton {
         margin: 2vh auto 0;
     }
-    #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
+    #firstOutputDiv a, #firstOutputDiv a img, #secondOutputDiv a, #secondOutputDiv a img {
         border-radius: 10px;
     }
-    #rightOutputDiv, #leftOutputDiv {
+    #secondOutputDiv, #firstOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -478,7 +478,7 @@ textarea {
         line-height: 7.5vw;
         letter-spacing: 3px;
     }
-    header p, #rightOutputDiv a p {
+    header p, #secondOutputDiv a p {
         font-size: 2.25vw;
         line-height: 2.25vw;
     }
@@ -487,14 +487,14 @@ textarea {
         padding: 0 5px;
     }
 
-    aside {
+    #headerNav {
         top: 10vh;
         right: 10%;
     }
-    aside img {
+    #headerNav img {
         margin-left: 10px;
     }
-    aside img, #leftOutputDiv img, #rightOutputDiv img {
+    #headerNav img, #firstOutputDiv img, #secondOutputDiv img {
         padding: 5px;
         width: 8vw;
         height: 8vw;
@@ -509,15 +509,15 @@ textarea {
         justify-content: space-between;
         margin: auto;
     }
-    #leftSection, #rightSection, #contactSection {
+    #firstSection, #secondSection, #contactSection {
         width: 38vw;
     }
 
-    #leftNav, #rightNav {
+    #firstNav, #secondNav {
         margin-top: 8vh;
         column-gap: 2px;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 2.5vw;
         line-height: 2.5vw;
         border: 4px solid var(--colour-primary);
@@ -525,17 +525,17 @@ textarea {
         padding: 1.5vw;
     }
 
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 1.8vmin;
         line-height: 2.2vmin;
     }
-    #leftOutputDiv, #rightOutputDiv, #footerButton {
+    #firstOutputDiv, #secondOutputDiv, #footerButton {
         margin-top: 4vh;
     }
-    #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
+    #firstOutputDiv a, #firstOutputDiv a img, #secondOutputDiv a, #secondOutputDiv a img {
         border-radius: 25px;
     }
-    #rightOutputDiv, #leftOutputDiv {
+    #secondOutputDiv, #firstOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -577,7 +577,7 @@ textarea {
         line-height: 6.75vw;
         letter-spacing: 3px;
     }
-    header p, #rightOutputDiv a p {
+    header p, #secondOutputDiv a p {
         font-size: 1.8vw;
         line-height: 1.8vw;
     }
@@ -586,14 +586,14 @@ textarea {
         padding: 0 5px;
     }
 
-    aside {
+    #headerNav {
         top: 10vh;
         right: 10%;
     }
-    aside img {
+    #headerNav img {
         margin-left: 10px;
     }
-    aside img, #leftOutputDiv img, #rightOutputDiv img {
+    #headerNav img, #firstOutputDiv img, #secondOutputDiv img {
         padding: 5px;
         width: 5vw;
         height: 5vw;
@@ -608,16 +608,16 @@ textarea {
         justify-content: space-between;
         margin: auto;
     }
-    #leftSection, #rightSection {
+    #firstSection, #secondSection {
         width: 35vw;
     }
 
 
-    #leftNav, #rightNav {
+    #firstNav, #secondNav {
         margin-top: 10vh;
         column-gap: 10px;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 1.5vw;
         line-height: 2.5vw;
         border: 4px solid var(--colour-primary);
@@ -625,17 +625,17 @@ textarea {
         padding: 0 2.5vw;
     }
 
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 1vw;
         line-height: 1.2vw;
     }
-    #leftOutputDiv, #rightOutputDiv, #footerButton {
+    #firstOutputDiv, #secondOutputDiv, #footerButton {
         margin-top: 4vh;
     }
-    #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
+    #firstOutputDiv a, #firstOutputDiv a img, #secondOutputDiv a, #secondOutputDiv a img {
         border-radius: 15px;
     }
-    #rightOutputDiv, #leftOutputDiv {
+    #secondOutputDiv, #firstOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -677,7 +677,7 @@ textarea {
         line-height: 6.75vw;
         letter-spacing: 3px;
     }
-    header p, #rightOutputDiv a p {
+    header p, #secondOutputDiv a p {
         font-size: 1.8vw;
         line-height: 1.8vw;
     }
@@ -686,14 +686,14 @@ textarea {
         padding: 0 5px;
     }
 
-    aside {
+    #headerNav {
         top: 10vh;
         right: 10%;
     }
-    aside img {
+    #headerNav img {
         margin-left: 10px;
     }
-    aside img, #leftOutputDiv img, #rightOutputDiv img {
+    #headerNav img, #firstOutputDiv img, #secondOutputDiv img {
         padding: 5px;
         width: 5vw;
         height: 5vw;
@@ -708,15 +708,15 @@ textarea {
         justify-content: space-between;
         margin: auto;
     }
-    #leftSection, #rightSection {
+    #firstSection, #secondSection {
         width: 35vw;
     }
 
-    #leftNav, #rightNav {
+    #firstNav, #secondNav {
         margin-top: 10vh;
         column-gap: 10px;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 1.5vw;
         line-height: 2.5vw;
         border: 4px solid var(--colour-primary);
@@ -724,17 +724,17 @@ textarea {
         padding: 0 2.5vw;
     }
 
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 1vw;
         line-height: 1.2vw;
     }
-    #leftOutputDiv, #rightOutputDiv, #footerButton {
+    #firstOutputDiv, #secondOutputDiv, #footerButton {
         margin-top: 4vh;
     }
-    #leftOutputDiv a, #leftOutputDiv a img, #rightOutputDiv a, #rightOutputDiv a img {
+    #firstOutputDiv a, #firstOutputDiv a img, #secondOutputDiv a, #secondOutputDiv a img {
         border-radius: 20px;
     }
-    #rightOutputDiv, #leftOutputDiv {
+    #secondOutputDiv, #firstOutputDiv {
         display: flex;
         justify-content: space-evenly;
     }
@@ -774,17 +774,17 @@ textarea {
     #sections {
         flex-direction: row !important;
     }
-    #rightSection {
+    #secondSection {
         flex-direction: column !important;
     }
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 2.5vmin !important;
         line-height: 2.5vmin !important;
     }
-    #leftSection, #rightSection {
+    #firstSection, #secondSection {
         width: 42vw !important;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 2.5vmin;
         line-height: 3.5vmin;
         border: 2px solid var(--colour-primary);
@@ -799,7 +799,7 @@ textarea {
         line-height: 6.5vw;
         letter-spacing: 3px;
     }
-    header p, #rightOutputDiv a p {
+    header p, #secondOutputDiv a p {
         font-size: 2.5vw;
         line-height: 4vw;
     }
@@ -812,10 +812,10 @@ textarea {
     #emailIcon {
         display: inline-block !important;
     }
-    aside {
+    #headerNav {
         right: 7%;
     }
-    aside img, #rightOutputDiv img, #leftOutputDiv img {
+    #headerNav img, #secondOutputDiv img, #firstOutputDiv img {
         padding: 2px;
         width: 8vw;
         height: 8vw;
@@ -829,17 +829,17 @@ textarea {
         width: 85vw;
         flex-direction: row !important;
     }
-    #rightSection {
+    #secondSection {
         flex-direction: column !important;
     }
-    #leftOutput, #rightOutput, #leftOutputDiv input, #leftOutputDiv textArea, #skillsDiv {
+    #firstOutput, #secondOutput, #firstOutputDiv input, #firstOutputDiv textArea, #skillsDiv {
         font-size: 2.25vmin !important;
         line-height: 2.25vmin !important;
     }
-    #leftSection, #rightSection {
+    #firstSection, #secondSection {
         width: 42vw !important;
     }
-    #leftNav a, #rightNav a, #footerButton a, #linkButtons a, #emailButton {
+    #firstNav a, #secondNav a, #footerButton a, #linkButtons a, #emailButton {
         font-size: 3.5vmin;
         line-height: 3.5vmin;
         border: 2px solid var(--colour-primary);
