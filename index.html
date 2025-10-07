@@ -1,13 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Mason L'Etoile</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="description" content="Mason L’Etoile — Computer Programming & Analysis student at Fanshawe College. Projects, skills, and contact information." />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <title>Mason L'Etoile</title>
+    <meta name="description" content="Mason L’Etoile — Computer Programming & Analysis student at Fanshawe College. Projects, skills, and contact information." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <script type="module" src="js/output.js"></script>
 </head> 
-
 <body>
     <main id="homePage">
         <header>
@@ -25,41 +25,54 @@
             <p>Computer Programming and Analysis - Fanshawe College</p>
 
             <nav id = "headerNav" aria-label="Social Media Links">
-                <a href="mailto:masonletoile@hotmail.com" id="emailIcon"><img class="hoverColor" src="img/email.png" alt="Email"></a>
-                <a href="https://www.linkedin.com/in/masonletoile/" target="_blank"><img class="hoverColor" src="img/linkedin.png" alt="Linkedin"></a>
-                <a href="https://github.com/Masonlet" target="_blank"><img class="hoverColor" src="img/github.png" alt="Github"></a>
+                <a href="mailto:masonletoile@hotmail.com" id="emailIcon" aria-label="Email">
+                    <img class="hoverColor" src="img/email.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/masonletoile/" target="_blank" aria-label="LinkedIn Profile">
+                    <img class="hoverColor" src="img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Masonlet" target="_blank" aria-label="Github Profile">
+                    <img class="hoverColor" src="img/github.png" alt="Github">
+                </a>
             </nav>  
         </header>
+
         <div id="sections">
             <section id="firstSection">
-                <nav id="firstNav">
-                    <a id="about" class="hoverColor" href="#">About</a>
-                    <a id="skills" class="hoverColor" href="#">Skills</a>
-                    <a id="contacts" class="hoverColor" href="contacts.html">Contacts</a>
+                <nav id="firstNav" aria-label="Main Navigation">
+                    <a id="about" class="hoverColor" href="#" aria-label="About Me">
+                        About
+                    </a>
+                    <a id="skills" class="hoverColor" href="#" aria-label="My Skills">
+                        Skills
+                    </a>
+                    <a id="contacts" class="hoverColor" href="contacts.html" aria-label="Contact Page">
+                        Contacts
+                    </a>
                 </nav>
                 <div id="firstOutputDiv">
                     <p id="firstOutput"></p> 
                 </div>
             </section>
             <section id="secondSection">
-                <nav id="secondNav">
+                <nav id="secondNav" aria-label="Projects Navigation">
                     <a id="projects" class="hoverColor" href="projects.html">Click for more Projects</a>
                 </nav>
                 <div id="secondOutputDiv">
                     <a href="https://github.com/Masonlet/TaskTracker" class="hoverColor" target="_blank">
-                        <img src="img/Projects/tasktracker.png" alt="Placeholder">
+                        <img src="img/Projects/tasktracker.png" alt="TaskTracker Project Screenshot">
                         <p>TaskTracker</p>
                     </a>
                     <a href="https://github.com/Masonlet/StarletDevelopment" class="hoverColor" target="_blank">
-                        <img src="img/Projects/opengl.png" alt="Placeholder">
+                        <img src="img/Projects/opengl.png" alt="OpenGL Engine Project Screenshot">
                         <p>OpenGL Engine</p>
                     </a>
                     <a href="https://github.com/Masonlet/Portfolio" class="hoverColor" target="_blank">
-                        <img src="img/Projects/portfolio.png" alt="Portfolio Project">
+                        <img src="img/Projects/portfolio.png" alt="Portfolio Project Screenshot">
                         <p>Portfolio</p>
                     </a>
                     <a href="https://github.com/Masonlet/CardPortfolio" class="hoverColor" target="_blank">
-                        <img src="img/Projects/card.png" alt="Placeholder">
+                        <img src="img/Projects/card.png" alt="Card Portfolio Project Screenshot">
                         <p>Card Portfolio</p>
                     </a>
                 </div>
