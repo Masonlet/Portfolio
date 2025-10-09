@@ -1,0 +1,416 @@
+/* Desktop Small */
+@media (min-width: 973px) and (max-width: 1024px) {
+    /* Header */
+    header {
+        width: 80vw;
+        margin: 10vh auto 0;
+    }
+
+    header h1 {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+        letter-spacing: 3px;
+    }
+
+    header p, 
+    #firstOutputDiv a p,
+    #secondOutputDiv a p {
+        font-size: 2.25vw;
+        line-height: 2.25vw;
+    }
+    
+    header p a {
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+
+    /* Navigation */
+    #headerNav {
+        top: 10vh;
+        right: 10%;
+    }
+    
+    #firstNav, 
+    #secondNav {
+        margin-top: 8vh;
+        column-gap: 2px;
+    }
+
+    #firstNav a, 
+    #secondNav a,
+    #linkButtons a, 
+    #emailButton {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        border: 4px solid var(--colour-primary);
+        border-radius: 10px;
+        padding: 1.5vw;
+    }
+
+    /* Images */
+    #headerNav img {
+        margin-left: 10px;
+    }
+
+    #headerNav img, 
+    #firstOutputDiv img,
+     #secondOutputDiv img {
+        padding: 5px;
+        width: 8vw;
+        height: 8vw;
+        border: 4px solid var(--colour-primary);
+        border-radius: 20px;
+    }
+
+    /* Sections */
+    #sections {
+        height: 100%;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    #firstSection, 
+    #secondSection, 
+    #contactSection {
+        width: 38vw;
+    }
+
+    /* Content */
+    #firstOutput, 
+    #secondOutput, 
+    #firstOutputDiv input, 
+    #firstOutputDiv 
+    textArea, 
+    #skillsDiv {
+        font-size: 1.8vmin;
+        line-height: 2.2vmin;
+    }
+
+    #firstOutputDiv, 
+    #secondOutputDiv {
+        margin-top: 4vh;
+    }
+
+    #firstOutputDiv a, 
+    #firstOutputDiv a img, 
+    #secondOutputDiv a, 
+    #secondOutputDiv a img {
+        border-radius: 25px;
+    }
+
+    #secondOutputDiv, 
+    #firstOutputDiv {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Forms */
+    input, 
+    textarea, 
+    .emailSubmit {
+        width: 100%;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 10vh;
+    }
+
+    .emailInput {
+        margin: 1vh 0;
+    }
+
+    /* Other */
+    #linkButtons a {
+        margin-top: 1vh;
+    }
+
+    .language {
+        width: 8vw !important;
+        height: 10vw !important;
+        padding: 10px;
+    }
+
+    .imageOut, 
+    #skillsDiv {
+        gap: 1.8vw;
+    }
+}
+
+/* Desktop Medium */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Header */
+    header {
+        width: 80vw;
+        margin: 10vh auto 0;
+    }
+
+    header h1 {
+        font-size: 6.75vw;
+        line-height: 6.75vw;
+        letter-spacing: 3px;
+    }
+
+    header p, 
+    #firstOutputDiv a p,
+    #secondOutputDiv a p {
+        font-size: 1.8vw;
+        line-height: 1.8vw;
+    }
+
+    header p a {
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+
+    /* Navigation */
+    #headerNav {
+        top: 10vh;
+        right: 10%;
+    }
+
+    #headerNav img {
+        margin-left: 10px;
+    }
+
+    #headerNav img, 
+    #firstOutputDiv img, 
+    #secondOutputDiv img {
+        padding: 5px;
+        width: 5vw;
+        height: 5vw;
+        border: 4px solid var(--colour-primary);
+        border-radius: 20px;
+    }
+
+    /* Sections */
+    #sections {
+        height: 100%;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    #firstSection, 
+    #secondSection {
+        width: 35vw;
+    }
+
+    /* Navigation */
+    #firstNav, 
+    #secondNav {
+        margin-top: 10vh;
+        column-gap: 10px;
+    }
+
+    #firstNav a, 
+    #secondNav a, 
+    #linkButtons a, 
+    #emailButton {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        border: 4px solid var(--colour-primary);
+        border-radius: 10px;
+        padding: 0 2.5vw;
+    }
+
+    /* Content */
+    #firstOutput, 
+    #secondOutput, 
+    #firstOutputDiv input, 
+    #firstOutputDiv textArea, 
+    #skillsDiv {
+        font-size: 1vw;
+        line-height: 1.2vw;
+    }
+
+    #firstOutputDiv, 
+    #secondOutputDiv {
+        margin-top: 4vh;
+    }
+
+    #firstOutputDiv a, 
+    #firstOutputDiv a img, 
+    #secondOutputDiv a, 
+    #secondOutputDiv a img {
+        border-radius: 15px;
+    }
+
+    #secondOutputDiv, 
+    #firstOutputDiv {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Forms */
+    input, 
+    textarea, 
+    .emailSubmit {
+        width: 100%;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 10vh;
+    }
+
+    .emailInput {
+        margin: 1vh 0;
+    }
+
+    /* Other */
+    #linkButtons a {
+        margin-top: 1vh;
+    }
+
+    .language {
+        width: 8vw !important;
+        height: 10vw !important;
+        padding: 10px;
+    }
+    .imageOut, 
+    #skillsDiv {
+        gap: 1.8vw;
+    }
+}
+
+/* Desktop Large */
+@media (min-width: 1201px) {    
+    /* Header */
+    header {
+        width: 80vw;
+        margin: 10vh auto 0;
+    }
+
+    header h1 {
+        font-size: 6.75vw;
+        line-height: 6.75vw;
+        letter-spacing: 3px;
+    }
+
+    header p, 
+    #firstOutputDiv a p,
+    #secondOutputDiv a p {
+        font-size: 1.8vw;
+        line-height: 1.8vw;
+    }
+
+    header p a {
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+
+    /* Navigation */
+    #headerNav {
+        top: 10vh;
+        right: 10%;
+    }
+    
+    #firstNav, 
+    #secondNav {
+        margin-top: 10vh;
+        column-gap: 10px;
+    }
+
+    #firstNav a, 
+    #secondNav a, 
+    #linkButtons a, 
+    #emailButton {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        border: 4px solid var(--colour-primary);
+        border-radius: 15px;
+        padding: 0 2.5vw;
+    }
+
+    /* Images */
+    #headerNav img {
+        margin-left: 10px;
+    }
+
+    #headerNav img, 
+    #firstOutputDiv img, 
+    #secondOutputDiv img {
+        padding: 5px;
+        width: 5vw;
+        height: 5vw;
+        border: 4px solid var(--colour-primary);
+        border-radius: 20px;
+    }
+
+    /* Sections */
+    #sections {
+        height: 100%;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    #firstSection, 
+    #secondSection {
+        width: 35vw;
+    }
+
+    /* Content */
+    #firstOutput, 
+    #secondOutput, 
+    #firstOutputDiv input, 
+    #firstOutputDiv textArea, 
+    #skillsDiv {
+        font-size: 1vw;
+        line-height: 1.2vw;
+    }
+
+    #firstOutputDiv, 
+    #secondOutputDiv {
+        margin-top: 4vh;
+    }
+
+    #firstOutputDiv a, 
+    #firstOutputDiv a img, 
+    #secondOutputDiv a, 
+    #secondOutputDiv a img {
+        border-radius: 20px;
+    }
+
+    #secondOutputDiv, 
+    #firstOutputDiv {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Forms */
+    input, 
+    textarea, 
+    .emailSubmit {
+        width: 100%;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 10vh;
+    }
+
+    .emailInput {
+        margin: 0.5vh 0;
+    }
+
+    /* Other */
+    #linkButtons a {
+        margin-top: 1vh;
+    }
+
+    .language {
+        width: 6vw !important;
+        height: 8vw !important;
+        padding: 10px;
+    }
+    .imageOut, 
+    #skillsDiv {
+        gap: 1.8vw;
+    }
+}

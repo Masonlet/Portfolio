@@ -1,4 +1,6 @@
 @import url('base.css');
 @import url('layout.css');
 @import url('components.css');
-@import url('media-queries.css');
+@import url('media-mobile.css');
+@import url('media-tablet.css');
+@import url('media-desktop.css');
