@@ -1,295 +1,295 @@
 /* Mobile */
 @media (max-width: 480px) {
-    /* Header */
-    header {
-        width: 90vw;
-        margin: 5vh auto 0;
-    }
+  /* Header */
+  header {
+    width: 90vw;
+    margin: 5vh auto 0;
+  }
 
-    header h1 {
-        font-size: 9.5vw;
-        line-height: 9.5vw;
-        letter-spacing: 3px;
-    }
+  header h1 {
+    font-size: 9.5vw;
+    line-height: 9.5vw;
+    letter-spacing: 3px;
+  }
 
-    header p, 
-    #firstOutputDiv a p,
-    #secondOutputDiv a p {
-        font-size: 3vw; 
-        line-height: 5vw;
-    }
+  header p, 
+  #firstOutputDiv a p,
+  #secondOutputDiv a p {
+    font-size: 3vw; 
+    line-height: 5vw;
+  }
 
-    header p a {
-        background: var(--dark-bg);
-        border: 2px solid var(--colour-primary);
-        border-radius: 5px;
-        padding: 2.5px;
-    }
+  header p a {
+    background: var(--dark-bg);
+    border: 2px solid var(--colour-primary);
+    border-radius: 5px;
+    padding: 2.5px;
+  }
 
-    /* Navigation */
-    #headerNav {
-        top: 5vh;
-        right: 5%;
-    }
+  /* Navigation */
+  #headerNav {
+    top: 5vh;
+    right: 5%;
+  }
 
-    #firstNav, 
-    #secondNav {
-        column-gap: 5px;
-    }
+  #firstNav, 
+  #secondNav {
+    column-gap: 5px;
+  }
 
-    #secondNav {
-        margin: 2vh 0 0;
-    }
+  #secondNav {
+    margin: 2vh 0 0;
+  }
 
-    #firstNav a, 
-    #secondNav a, 
-    #linkButtons a, 
-    #emailButton {
-        font-size: 4vw;
-        line-height: 4vw;
-        border: 2px solid var(--colour-primary);
-        border-radius: 5px;
-        padding: 1.5vw;
-    }
+  #firstNav a, 
+  #secondNav a, 
+  #linkButtons a, 
+  #emailButton {
+    font-size: 4vw;
+    line-height: 4vw;
+    border: 2px solid var(--colour-primary);
+    border-radius: 5px;
+    padding: 1.5vw;
+  }
 
-    /* Image */
-    #headerNav img, 
-    #secondOutputDiv img, 
-    #firstOutputDiv img {
-        width: 12.5vw;
-        height: 12.5vw;
-        padding: 2px;
-        border: 2px solid var(--colour-primary);
-        border-radius: 5px;
-    }
+  /* Image */
+  #headerNav img, 
+  #secondOutputDiv img, 
+  #firstOutputDiv img {
+    width: 12.5vw;
+    height: 12.5vw;
+    padding: 2px;
+    border: 2px solid var(--colour-primary);
+    border-radius: 5px;
+  }
 
-    #emailIcon {
-        display: none;
-    }
+  #emailIcon {
+    display: none;
+  }
 
-    /* Sections */
-    #sections {
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 0 auto 5vh;
-    }
+  /* Sections */
+  #sections {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto 5vh;
+  }
 
-    #firstSection, 
-    #secondSection {
-        display: flex;
-    }
+  #firstSection, 
+  #secondSection {
+    display: flex;
+  }
 
-    #firstSection {
-        flex-direction: column;
-        height: 55%;
-    }
+  #firstSection {
+    flex-direction: column;
+    height: 55%;
+  }
 
-    #secondSection {
-        flex-direction: column-reverse;
-    }
+  #secondSection {
+    flex-direction: column-reverse;
+  }
 
-    #contactSection {
-        display: flex;
-        flex-direction: column;
-    }
+  #contactSection {
+    display: flex;
+    flex-direction: column;
+  }
 
-    /* Content */
-    #firstOutput, 
-    #secondOutput, 
-    #firstOutputDiv input, 
-    #firstOutputDiv textArea, 
-    #skillsDiv {
-        font-size: 2.75vmin;
-        line-height: 3.75vmin;
-    }
+  /* Content */
+  #firstOutput, 
+  #secondOutput, 
+  #firstOutputDiv input, 
+  #firstOutputDiv textArea, 
+  #skillsDiv {
+    font-size: 2.75vmin;
+    line-height: 3.75vmin;
+  }
 
-    #firstOutputDiv, 
-    #secondOutputDiv {
-        margin: 2vh 0 0;
-    }
+  #firstOutputDiv, 
+  #secondOutputDiv {
+    margin: 2vh 0 0;
+  }
 
-    #firstOutputDiv a, 
-    #firstOutputDiv a img, 
-    #secondOutputDiv a, 
-    #secondOutputDiv a img {
-        border-radius: 10px;
-    }
+  #firstOutputDiv a, 
+  #firstOutputDiv a img, 
+  #secondOutputDiv a, 
+  #secondOutputDiv a img {
+    border-radius: 10px;
+  }
 
-    #secondOutputDiv, 
-    #firstOutputDiv {
-        display: flex;
-        justify-content: space-evenly;
-    }
+  #secondOutputDiv, 
+  #firstOutputDiv {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-    /* Forms */
-    input, 
-    textarea, 
-    .emailSubmit {
-        width: 100%;
-        padding: 4px;
-    }
+  /* Forms */
+  input, 
+  textarea, 
+  .emailSubmit {
+    width: 100%;
+    padding: 4px;
+  }
 
-    textarea {
-        height: 8vh;
-    }
+  textarea {
+    height: 8vh;
+  }
 
-    .emailInput {
-        margin: 1vh 0;
-    }
+  .emailInput {
+    margin: 1vh 0;
+  }
 
-    /* Other */
-    #linkButtons a {
-        margin-top: 1vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /* Other */
+  #linkButtons a {
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .language {
-        width: 15vw !important;
-        height: 20vw !important;
-        padding: 10px;
-    }
+  .language {
+    width: 15vw !important;
+    height: 20vw !important;
+    padding: 10px;
+  }
 
-    .imageOut, 
-    #skillsDiv {
-        gap: 5vw;
-    }
+  .imageOut, 
+  #skillsDiv {
+    gap: 5vw;
+  }
 }
 
 /* Landscope Mobile */
 @media (max-height: 430px) and (max-width: 789px){
-    /* Images */
-    #emailIcon {
-        display: inline-block !important;
-    }
+  /* Images */
+  #emailIcon {
+    display: inline-block !important;
+  }
 
-    /* Navigation */
-    #firstNav a, 
-    #secondNav a, 
-    #linkButtons a,
-    #emailButton {
-        font-size: 2.5vmin;
-        line-height: 3.5vmin;
-        border: 2px solid var(--colour-primary);
-        border-radius: 10px;
-        padding: 1vmin;
-    }
+  /* Navigation */
+  #firstNav a, 
+  #secondNav a, 
+  #linkButtons a,
+  #emailButton {
+    font-size: 2.5vmin;
+    line-height: 3.5vmin;
+    border: 2px solid var(--colour-primary);
+    border-radius: 10px;
+    padding: 1vmin;
+  }
 
-    /* Sections */
-    #sections {
-        flex-direction: row !important;
-    }
+  /* Sections */
+  #sections {
+    flex-direction: row !important;
+  }
 
-    #secondSection {
-        flex-direction: column !important;
-    }
+  #secondSection {
+    flex-direction: column !important;
+  }
 
-    #firstSection, 
-    #secondSection {
-        width: 42vw !important;
-    }
+  #firstSection, 
+  #secondSection {
+    width: 42vw !important;
+  }
 
-    /* Content */
-    #firstOutput, 
-    #secondOutput, 
-    #firstOutputDiv input, 
-    #firstOutputDiv textArea, 
-    #skillsDiv {
-        font-size: 2.5vmin !important;
-        line-height: 2.5vmin !important;
-    }
+  /* Content */
+  #firstOutput, 
+  #secondOutput, 
+  #firstOutputDiv input, 
+  #firstOutputDiv textArea, 
+  #skillsDiv {
+    font-size: 2.5vmin !important;
+    line-height: 2.5vmin !important;
+  }
 }
 @media (max-height: 430px) and (max-width: 972px){
-    /* Header */
-    header {
-        width: 85vw;
-    }
+  /* Header */
+  header {
+    width: 85vw;
+  }
 
-    header h1 {
-        font-size: 7.5vw;
-        line-height: 6.5vw;
-        letter-spacing: 3px;
-    }
+  header h1 {
+    font-size: 7.5vw;
+    line-height: 6.5vw;
+    letter-spacing: 3px;
+  }
 
-    header p, 
-    #firstOutputDiv a p,
-    #secondOutputDiv a p {
-        font-size: 2.5vw;
-        line-height: 4vw;
-    }
+  header p, 
+  #firstOutputDiv a p,
+  #secondOutputDiv a p {
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
 
-    header p a {
-        border-radius: 5px;
-        padding: 2.5px;
-        background: var(--dark-bg);
-        border: 2px solid var(--colour-primary);
-    }
+  header p a {
+    border-radius: 5px;
+    padding: 2.5px;
+    background: var(--dark-bg);
+    border: 2px solid var(--colour-primary);
+  }
 
-    /* Navigation */
-    #headerNav {
-        right: 7%;
-    }
-    
-    #firstNav a, 
-    #secondNav a, 
-    #linkButtons a, 
-    #emailButton {
-        font-size: 3.5vmin;
-        line-height: 3.5vmin;
-        border: 2px solid var(--colour-primary);
-        border-radius: 10px;
-        padding: 1vmin;
-    }
+  /* Navigation */
+  #headerNav {
+    right: 7%;
+  }
+  
+  #firstNav a, 
+  #secondNav a, 
+  #linkButtons a, 
+  #emailButton {
+    font-size: 3.5vmin;
+    line-height: 3.5vmin;
+    border: 2px solid var(--colour-primary);
+    border-radius: 10px;
+    padding: 1vmin;
+  }
 
-    /* Images */
-    #emailIcon {
-        display: inline-block !important;
-    }
+  /* Images */
+  #emailIcon {
+    display: inline-block !important;
+  }
 
-    #headerNav img, 
-    #secondOutputDiv img, 
-    #firstOutputDiv img {
-        padding: 2px;
-        width: 8vw;
-        height: 8vw;
-        border: 4px solid var(--colour-primary);
-        border-radius: 5px;
-    }
+  #headerNav img, 
+  #secondOutputDiv img, 
+  #firstOutputDiv img {
+    padding: 2px;
+    width: 8vw;
+    height: 8vw;
+    border: 4px solid var(--colour-primary);
+    border-radius: 5px;
+  }
 
-    /* Sections */
-    #sections {
-        width: 85vw;
-        flex-direction: row !important;
-    }
+  /* Sections */
+  #sections {
+    width: 85vw;
+    flex-direction: row !important;
+  }
 
-    #firstSection, 
-    #secondSection {
-        width: 42vw !important;
-    }
+  #firstSection, 
+  #secondSection {
+    width: 42vw !important;
+  }
 
-    #secondSection {
-        flex-direction: column !important;
-    }
+  #secondSection {
+    flex-direction: column !important;
+  }
 
-    /* Content */
-    #firstOutput, 
-    #secondOutput, 
-    #firstOutputDiv input, 
-    #firstOutputDiv textArea, 
-    #skillsDiv {
-        font-size: 2.25vmin !important;
-        line-height: 2.25vmin !important;
-    }
+  /* Content */
+  #firstOutput, 
+  #secondOutput, 
+  #firstOutputDiv input, 
+  #firstOutputDiv textArea, 
+  #skillsDiv {
+    font-size: 2.25vmin !important;
+    line-height: 2.25vmin !important;
+  }
 
-    /* Other */
-    .language {
-        width: 5vw !important;
-        height: 6vw !important;
-    }
-    .imageOut, 
-    #skillsDiv {
-        gap: 1vw;
-    }
+  /* Other */
+  .language {
+    width: 5vw !important;
+    height: 6vw !important;
+  }
+  .imageOut, 
+  #skillsDiv {
+    gap: 1vw;
+  }
 }

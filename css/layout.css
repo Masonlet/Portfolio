@@ -1,36 +1,36 @@
 main {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #headerNav {
-    position: fixed;
+  position: fixed;
 }
 
 #sections {
-    height: 100%;
+  height: 100%;
 }
 
 /* Navigation */
 #firstNav, 
 #secondNav {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 #secondNav {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #firstNav a, 
 #secondNav a, 
 #linkButtons a, 
 #emailButton {
-    width: 100%;
-    background: var(--dark-bg);
-    text-align: center;
-    display: inline-block;
+  width: 100%;
+  background: var(--dark-bg);
+  text-align: center;
+  display: inline-block;
 }
