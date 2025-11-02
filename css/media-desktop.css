@@ -1,3 +1,26 @@
+/* Desktop Universal */
+@media (min-width: 973px) {
+  /* Resume */
+  #resumePage {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 2.5vw;
+  }
+
+ #resumeHeader {
+    width: 25vw;
+    margin: 10vh 0 0 10vh;
+  }
+
+  #resumeSection {
+    width: 55vw;
+    height: 90vh;
+    margin-top: 4vh;
+  }
+}
+
 /* Desktop Small */
 @media (min-width: 973px) and (max-width: 1024px) {
   /* Header */
