@@ -1,0 +1,23 @@
+/* Font */
+#firstOutput, 
+#secondOutput, 
+#firstOutputDiv input, 
+#firstOutputDiv textArea, 
+#skillsDiv, 
+.emailSubmit {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Text Alignment */
+#secondOutputDiv a, 
+#firstOutputDiv a {
+  text-align: center;
+}
+
+#firstOutputDiv p {
+  text-align: left !important;
+}
+
+#firstOutputDiv a p {
+  text-align: center !important;
+}
