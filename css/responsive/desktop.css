@@ -1,0 +1,21 @@
+@media (min-width: 973px) {
+  /* Resume */
+  #resume-page, #project-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 2.5vw;
+  }
+
+ #resume-header, #project-header {
+    width: 25vw;
+    margin: 10vh 0 0 10vh;
+  }
+
+  #resume-section, #project-section {
+    width: 55vw;
+    height: 90vh;
+    margin-top: 4vh;
+  }
+}

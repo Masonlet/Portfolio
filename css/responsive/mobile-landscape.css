@@ -1,0 +1,134 @@
+@media (max-height: 430px) and (max-width: 789px){
+  /* Images */
+  #email-icon {
+    display: inline-block !important;
+  }
+
+  /* Navigation */
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a,
+  #email-button {
+    font-size: 2.5vmin;
+    line-height: 3.5vmin;
+    border: 2px solid var(--colour-primary);
+    border-radius: 10px;
+    padding: 1vmin;
+  }
+
+  /* Sections */
+  #sections {
+    flex-direction: row !important;
+  }
+
+  #second-section {
+    flex-direction: column !important;
+  }
+
+  #first-section, 
+  #second-section {
+    width: 42vw !important;
+  }
+
+  /* Content */
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
+    font-size: 2.5vmin !important;
+    line-height: 2.5vmin !important;
+  }
+}
+@media (max-height: 430px) and (max-width: 972px){
+  /* Header */
+  header {
+    width: 85vw;
+  }
+
+  header h1 {
+    font-size: 7.5vw;
+    line-height: 6.5vw;
+    letter-spacing: 3px;
+  }
+
+  header p, 
+  #first-output-div a p,
+  #second-output-div a p {
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+
+  header p a {
+    border-radius: 5px;
+    padding: 2.5px;
+    background: var(--dark-bg);
+    border: 2px solid var(--colour-primary);
+  }
+
+  /* Navigation */
+  #header-nav {
+    right: 7%;
+  }
+  
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a, 
+  #email-button {
+    font-size: 3.5vmin;
+    line-height: 3.5vmin;
+    border: 2px solid var(--colour-primary);
+    border-radius: 10px;
+    padding: 1vmin;
+  }
+
+  /* Images */
+  #email-icon {
+    display: inline-block !important;
+  }
+
+  #header-nav img, 
+  #second-output-div img, 
+  #first-output-div img {
+    padding: 2px;
+    width: 8vw;
+    height: 8vw;
+    border: 4px solid var(--colour-primary);
+    border-radius: 5px;
+  }
+
+  /* Sections */
+  #sections {
+    width: 85vw;
+    flex-direction: row !important;
+  }
+
+  #first-section, 
+  #second-section {
+    width: 42vw !important;
+  }
+
+  #second-section {
+    flex-direction: column !important;
+  }
+
+  /* Content */
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
+    font-size: 2.25vmin !important;
+    line-height: 2.25vmin !important;
+  }
+
+  /* Other */
+  .language {
+    width: 5vw !important;
+    height: 6vw !important;
+  }
+  .image-out, 
+  #skills-div {
+    gap: 1vw;
+  }
+}

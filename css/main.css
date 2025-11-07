@@ -1,7 +1,26 @@
-@import url('base.css');
-@import url('layout.css');
-@import url('typography.css');
-@import url('components.css');
-@import url('media-mobile.css');
-@import url('media-tablet.css');
-@import url('media-desktop.css');
+@import url('settings/variables.css');
+@import url('settings/animations.css');
+
+@import url('base/reset.css');
+@import url('base/root.css');
+
+@import url('layout/main.css');
+@import url('layout/sections.css');
+@import url('layout/navigation.css');
+
+@import url('components/buttons.css');
+@import url('components/forms.css');
+@import url('components/images.css');
+@import url('components/cards.css');
+@import url('components/projects.css');
+
+@import url('utilities/utilities.css');
+
+@import url('responsive/mobile.css');
+@import url('responsive/mobile-landscape.css');
+@import url('responsive/tablet.css');
+@import url('responsive/tablet-large.css');
+@import url('responsive/desktop.css');
+@import url('responsive/desktop-small.css');
+@import url('responsive/desktop-medium.css');
+@import url('responsive/desktop-large.css');

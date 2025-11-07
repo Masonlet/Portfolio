@@ -1,0 +1,38 @@
+/* Content Area */
+#first-output,
+#first-output-div {
+  width: 100%;
+}
+
+#skills-div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-out {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Resume & Project */
+#resume-page, 
+#project-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1rem;
+}
+
+#resume-section, 
+#project-section {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh;
+}

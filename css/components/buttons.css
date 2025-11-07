@@ -1,0 +1,33 @@
+#first-nav a, 
+#second-nav a, 
+#link-buttons a, 
+#email-button {
+  width: 100%;
+  background: var(--dark-bg);
+  text-align: center;
+  display: inline-block;
+}
+
+.email-submit {
+  background: var(--dark-bg);
+}
+
+#back-to-grid,
+#github-button {
+  background: var(--dark-bg);
+  border: 2px solid var(--colour-primary);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+  align-self: flex-start;
+}
+
+#back-to-grid:hover, 
+#github-button:hover {
+  transform: scale(1.05);
+  background: var(--hover-bg) !important;
+}

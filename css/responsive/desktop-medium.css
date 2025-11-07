@@ -1,0 +1,136 @@
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Header */
+  header {
+    width: 80vw;
+    margin: 10vh auto 0;
+  }
+
+  header h1 {
+    font-size: 6.75vw;
+    line-height: 6.75vw;
+    letter-spacing: 3px;
+  }
+
+  header p, 
+  #first-output-div a p,
+  #second-output-div a p {
+    font-size: 1.8vw;
+    line-height: 1.8vw;
+  }
+
+  header p a {
+    border-radius: 5px;
+    padding: 0 5px;
+  }
+
+  /* Navigation */
+  #header-nav {
+    top: 10vh;
+    right: 10%;
+  }
+
+  #header-nav img {
+    margin-left: 10px;
+  }
+
+  #header-nav img, 
+  #first-output-div img, 
+  #second-output-div img {
+    padding: 5px;
+    width: 5vw;
+    height: 5vw;
+    border: 4px solid var(--colour-primary);
+    border-radius: 20px;
+  }
+
+  /* Sections */
+  #sections {
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  #first-section, 
+  #second-section {
+    width: 35vw;
+  }
+
+  /* Navigation */
+  #first-nav, 
+  #second-nav {
+    margin-top: 10vh;
+    column-gap: 10px;
+  }
+
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a, 
+  #email-button {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    border: 4px solid var(--colour-primary);
+    border-radius: 10px;
+    padding: 0 2.5vw;
+  }
+
+  /* Content */
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
+    font-size: 1vw;
+    line-height: 1.2vw;
+  }
+
+  #first-output-div, 
+  #second-output-div {
+    margin-top: 4vh;
+  }
+
+  #first-output-div a, 
+  #first-output-div a img, 
+  #second-output-div a, 
+  #second-output-div a img {
+    border-radius: 15px;
+  }
+
+  #second-output-div, 
+  #first-output-div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* Forms */
+  input, 
+  textarea, 
+  .email-submit {
+    width: 100%;
+    padding: 10px;
+  }
+
+  textarea {
+    height: 10vh;
+  }
+
+  .email-input {
+    margin: 1vh 0;
+  }
+
+  /* Other */
+  #link-buttons a {
+    margin-top: 1vh;
+  }
+
+  .language {
+    width: 8vw !important;
+    height: 10vw !important;
+    padding: 10px;
+  }
+  .image-out, 
+  #skills-div {
+    gap: 1.8vw;
+  }
+}

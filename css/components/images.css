@@ -1,0 +1,25 @@
+#header-nav img, 
+#first-output-div img,
+#second-output-div img {
+  background: var(--light-bg);
+}
+
+.project-card img,
+#project-preview {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.project-card img {
+  max-height: 240px;
+  margin-bottom: 0.75rem;
+}
+
+#project-preview {
+  max-height: 250px;
+  margin-bottom: 1rem;
+}
+

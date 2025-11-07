@@ -1,0 +1,31 @@
+/* Text Alignment */
+#second-output-div a, 
+#first-output-div a {
+  text-align: center;
+}
+
+#first-output-div p {
+  text-align: left !important;
+}
+
+#first-output-div a p {
+  text-align: center !important;
+}
+
+/* State */
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+.fade-out {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+/* Interactive */
+.hover-colour:hover {
+  background: var(--hover-bg) !important;
+  z-index: 1;
+  cursor: pointer;
+}

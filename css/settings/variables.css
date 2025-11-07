@@ -1,0 +1,14 @@
+:root {
+  /* Colours */
+  --colour-primary: #004d4d;
+  --colour-secondary: #4d4d00;
+  --colour-txt-light: white;
+
+  /* Background Colours */
+  --light-bg: rgba(0, 0, 0, 0.1);
+  --dark-bg: rgba(0, 0, 0, 0.25);
+  --hover-bg: rgba(0, 0, 0, 0.5);
+
+  /* Gradients */
+  --colour-gradient: -145deg, var(--colour-secondary), var(--colour-primary), var(--colour-secondary), var(--colour-primary);
+}

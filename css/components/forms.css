@@ -1,0 +1,26 @@
+input, 
+textarea {
+  border: 2px solid var(--colour-primary);
+  background: var(--light-bg);
+}
+
+.email-input, 
+textarea {
+  color: var(--colour-txt-light);
+  background: var(--light-bg);
+  width: 100%;
+}
+
+textarea {
+  text-align: left;
+}
+
+/* Typography */
+#first-output, 
+#second-output, 
+#first-output-div input, 
+#first-output-div textarea, 
+#skills-div, 
+.email-submit {
+  font-family: Arial, Helvetica, sans-serif;
+}

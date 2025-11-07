@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--colour-txt-light);
+  list-style: none;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 2px 2px var(--colour-primary);
+}
