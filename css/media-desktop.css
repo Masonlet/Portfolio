@@ -1,7 +1,7 @@
 /* Desktop Universal */
 @media (min-width: 973px) {
   /* Resume */
-  #resumePage {
+  #resume-page, #project-page {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -9,12 +9,12 @@
     padding: 0 2.5vw;
   }
 
- #resumeHeader {
+ #resume-header, #project-header {
     width: 25vw;
     margin: 10vh 0 0 10vh;
   }
 
-  #resumeSection {
+  #resume-section, #project-section {
     width: 55vw;
     height: 90vh;
     margin-top: 4vh;
@@ -36,8 +36,8 @@
   }
 
   header p, 
-  #firstOutputDiv a p,
-  #secondOutputDiv a p {
+  #first-output-div a p,
+  #second-output-div a p {
     font-size: 2.25vw;
     line-height: 2.25vw;
   }
@@ -48,21 +48,21 @@
   }
 
   /* Navigation */
-  #headerNav {
+  #header-nav {
     top: 10vh;
     right: 10%;
   }
 
-  #firstNav, 
-  #secondNav {
+  #first-nav, 
+  #second-nav {
     margin-top: 8vh;
     column-gap: 2px;
   }
 
-  #firstNav a, 
-  #secondNav a,
-  #linkButtons a, 
-  #emailButton {
+  #first-nav a, 
+  #second-nav a,
+  #link-buttons a, 
+  #email-button {
     font-size: 2.5vw;
     line-height: 2.5vw;
     border: 4px solid var(--colour-primary);
@@ -71,13 +71,13 @@
   }
 
   /* Images */
-  #headerNav img {
+  #header-nav img {
     margin-left: 10px;
   }
 
-  #headerNav img, 
-  #firstOutputDiv img,
-  #secondOutputDiv img {
+  #header-nav img, 
+  #first-output-div img,
+  #second-output-div img {
     padding: 5px;
     width: 8vw;
     height: 8vw;
@@ -94,37 +94,37 @@
     margin: auto;
   }
 
-  #firstSection, 
-  #secondSection, 
-  #contactSection {
+  #first-section, 
+  #second-section, 
+  #contact-section {
     width: 38vw;
   }
 
   /* Content */
-  #firstOutput, 
-  #secondOutput, 
-  #firstOutputDiv input, 
-  #firstOutputDiv 
-  textArea, 
-  #skillsDiv {
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div 
+  text-area, 
+  #skills-div {
     font-size: 1.8vmin;
     line-height: 2.2vmin;
   }
 
-  #firstOutputDiv, 
-  #secondOutputDiv {
+  #first-output-div, 
+  #second-output-div {
     margin-top: 4vh;
   }
 
-  #firstOutputDiv a, 
-  #firstOutputDiv a img, 
-  #secondOutputDiv a, 
-  #secondOutputDiv a img {
+  #first-output-div a, 
+  #first-output-div a img, 
+  #second-output-div a, 
+  #second-output-div a img {
     border-radius: 25px;
   }
 
-  #secondOutputDiv, 
-  #firstOutputDiv {
+  #second-output-div, 
+  #first-output-div {
     display: flex;
     justify-content: space-evenly;
   }
@@ -132,7 +132,7 @@
   /* Forms */
   input, 
   textarea, 
-  .emailSubmit {
+  .email-submit {
     width: 100%;
     padding: 10px;
   }
@@ -141,12 +141,12 @@
     height: 10vh;
   }
 
-  .emailInput {
+  .email-input {
     margin: 1vh 0;
   }
 
   /* Other */
-  #linkButtons a {
+  #link-buttons a {
     margin-top: 1vh;
   }
 
@@ -156,8 +156,8 @@
     padding: 10px;
   }
 
-  .imageOut, 
-  #skillsDiv {
+  .image-out, 
+  #skills-div {
     gap: 1.8vw;
   }
 }
@@ -177,8 +177,8 @@
   }
 
   header p, 
-  #firstOutputDiv a p,
-  #secondOutputDiv a p {
+  #first-output-div a p,
+  #second-output-div a p {
     font-size: 1.8vw;
     line-height: 1.8vw;
   }
@@ -189,18 +189,18 @@
   }
 
   /* Navigation */
-  #headerNav {
+  #header-nav {
     top: 10vh;
     right: 10%;
   }
 
-  #headerNav img {
+  #header-nav img {
     margin-left: 10px;
   }
 
-  #headerNav img, 
-  #firstOutputDiv img, 
-  #secondOutputDiv img {
+  #header-nav img, 
+  #first-output-div img, 
+  #second-output-div img {
     padding: 5px;
     width: 5vw;
     height: 5vw;
@@ -217,22 +217,22 @@
     margin: auto;
   }
 
-  #firstSection, 
-  #secondSection {
+  #first-section, 
+  #second-section {
     width: 35vw;
   }
 
   /* Navigation */
-  #firstNav, 
-  #secondNav {
+  #first-nav, 
+  #second-nav {
     margin-top: 10vh;
     column-gap: 10px;
   }
 
-  #firstNav a, 
-  #secondNav a, 
-  #linkButtons a, 
-  #emailButton {
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a, 
+  #email-button {
     font-size: 1.5vw;
     line-height: 2.5vw;
     border: 4px solid var(--colour-primary);
@@ -241,29 +241,29 @@
   }
 
   /* Content */
-  #firstOutput, 
-  #secondOutput, 
-  #firstOutputDiv input, 
-  #firstOutputDiv textArea, 
-  #skillsDiv {
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
     font-size: 1vw;
     line-height: 1.2vw;
   }
 
-  #firstOutputDiv, 
-  #secondOutputDiv {
+  #first-output-div, 
+  #second-output-div {
     margin-top: 4vh;
   }
 
-  #firstOutputDiv a, 
-  #firstOutputDiv a img, 
-  #secondOutputDiv a, 
-  #secondOutputDiv a img {
+  #first-output-div a, 
+  #first-output-div a img, 
+  #second-output-div a, 
+  #second-output-div a img {
     border-radius: 15px;
   }
 
-  #secondOutputDiv, 
-  #firstOutputDiv {
+  #second-output-div, 
+  #first-output-div {
     display: flex;
     justify-content: space-evenly;
   }
@@ -271,7 +271,7 @@
   /* Forms */
   input, 
   textarea, 
-  .emailSubmit {
+  .email-submit {
     width: 100%;
     padding: 10px;
   }
@@ -280,12 +280,12 @@
     height: 10vh;
   }
 
-  .emailInput {
+  .email-input {
     margin: 1vh 0;
   }
 
   /* Other */
-  #linkButtons a {
+  #link-buttons a {
     margin-top: 1vh;
   }
 
@@ -294,8 +294,8 @@
     height: 10vw !important;
     padding: 10px;
   }
-  .imageOut, 
-  #skillsDiv {
+  .image-out, 
+  #skills-div {
     gap: 1.8vw;
   }
 }
@@ -315,8 +315,8 @@
   }
 
   header p, 
-  #firstOutputDiv a p,
-  #secondOutputDiv a p {
+  #first-output-div a p,
+  #second-output-div a p {
     font-size: 1.8vw;
     line-height: 1.8vw;
   }
@@ -327,21 +327,21 @@
   }
 
   /* Navigation */
-  #headerNav {
+  #header-nav {
     top: 10vh;
     right: 10%;
   }
 
-  #firstNav, 
-  #secondNav {
+  #first-nav, 
+  #second-nav {
     margin-top: 10vh;
     column-gap: 10px;
   }
 
-  #firstNav a, 
-  #secondNav a, 
-  #linkButtons a, 
-  #emailButton {
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a, 
+  #email-button {
     font-size: 1.5vw;
     line-height: 2.5vw;
     border: 4px solid var(--colour-primary);
@@ -350,13 +350,13 @@
   }
 
   /* Images */
-  #headerNav img {
+  #header-nav img {
     margin-left: 10px;
   }
 
-  #headerNav img, 
-  #firstOutputDiv img, 
-  #secondOutputDiv img {
+  #header-nav img, 
+  #first-output-div img, 
+  #second-output-div img {
     padding: 5px;
     width: 5vw;
     height: 5vw;
@@ -373,35 +373,35 @@
     margin: auto;
   }
 
-  #firstSection, 
-  #secondSection {
+  #first-section, 
+  #second-section {
     width: 35vw;
   }
 
   /* Content */
-  #firstOutput, 
-  #secondOutput, 
-  #firstOutputDiv input, 
-  #firstOutputDiv textArea, 
-  #skillsDiv {
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
     font-size: 1vw;
     line-height: 1.2vw;
   }
 
-  #firstOutputDiv, 
-  #secondOutputDiv {
+  #first-output-div, 
+  #second-output-div {
     margin-top: 4vh;
   }
 
-  #firstOutputDiv a, 
-  #firstOutputDiv a img, 
-  #secondOutputDiv a, 
-  #secondOutputDiv a img {
+  #first-output-div a, 
+  #first-output-div a img, 
+  #second-output-div a, 
+  #second-output-div a img {
     border-radius: 20px;
   }
 
-  #secondOutputDiv, 
-  #firstOutputDiv {
+  #second-output-div, 
+  #first-output-div {
     display: flex;
     justify-content: space-evenly;
   }
@@ -409,7 +409,7 @@
   /* Forms */
   input, 
   textarea, 
-  .emailSubmit {
+  .email-submit {
     width: 100%;
     padding: 10px;
   }
@@ -418,12 +418,12 @@
     height: 10vh;
   }
 
-  .emailInput {
+  .email-input {
     margin: 0.5vh 0;
   }
 
   /* Other */
-  #linkButtons a {
+  #link-buttons a {
     margin-top: 1vh;
   }
 
@@ -433,7 +433,7 @@
     padding: 10px;
   }
   .imageOut, 
-  #skillsDiv {
+  #skills-div {
     gap: 1.8vw;
   }
 }

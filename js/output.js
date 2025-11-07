@@ -1,8 +1,8 @@
 //Variables
 const TYPING_SPEED = 20;
 const HOME_IMAGE_PATHS = {
-  html: `img/Languages/html.png`, css: `img/Languages/css.png`, js: `img/Languages/js.png`,
-  java: `img/Languages/java.png`, cpp: `img/Languages/cpp.png`, cs: `img/Languages/cs.png`
+  html: `img/languages/html.png`, css: `img/languages/css.png`, js: `img/languages/js.png`,
+  java: `img/languages/java.png`, cpp: `img/languages/cpp.png`, cs: `img/languages/cs.png`
 };  
 const SECTIONS = [`about`, `skills`, `contacts`];
 const output = { firstOutput: null, secondOutput: null }
@@ -54,7 +54,7 @@ function createSkills() {
   const frontEndImages = [`html`, `css`, `js`].map(createImage).join(``);
   const backEndImages = [`java`, `cpp`, `cs`].map(createImage).join(``);
 
-  content.first.skills = `<div id="skillsDiv">Front-end languages<div class = "imageOut">${frontEndImages}</div>Back-end languages<div class ="imageOut">${backEndImages}</div></div>`;
+  content.first.skills = `<div id="skills-div">Front-end languages<div class = "image-out">${frontEndImages}</div>Back-end languages<div class ="image-out">${backEndImages}</div></div>`;
   return content.first.skills;
 }
 
@@ -77,7 +77,7 @@ function preloadImages(images) {
 async function printContent(outputType, isSecond = false) {
   const side = isSecond ? `second` : `first`;
 
-  const outputDiv = document.getElementById(`${side}Output`);
+  const outputDiv = document.getElementById(`${side}-output`);
   if (!outputDiv) {
     console.error(`Output div not found for ${side}`);
     return;
@@ -152,12 +152,12 @@ async function typeContent(outputType, outputDiv, typingKey, contentKey){
 }
 
 //Listeners
-if(document.getElementById(`homePage`)) {
+if(document.getElementById(`home-page`)) {
   document.getElementById(`about`).addEventListener(`click`, () => printContent(`about`));
   document.getElementById(`skills`).addEventListener(`click`, () => printContent(`skills`));
 }
 window.addEventListener(`load`, async () => { 
-  const homePage = document.getElementById(`homePage`);
+  const homePage = document.getElementById(`home-page`);
   if(!homePage) return;
 
   await preloadImages(HOME_IMAGE_PATHS);

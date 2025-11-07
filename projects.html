@@ -14,72 +14,36 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <script type="module" src="js/output.js"></script>
+  <script type="module" src="js/project.js"></script>
+</head>
 <body>
-  <main id="projectPage">
-    <header>
+  <main id="project-page">
+    <header id="project-header">
       <h1>Projects</h1>
-      <p><a href="index.html" class="hoverColor">Return to home page</a></p>
-
-      <nav id = "headerNav" aria-label="Social Media Links">
-        <a href="contacts.html" aria-label="Contact Page">
-          <img class="hoverColor" src="img/email.png" alt="Email">
-        </a>
-        <a href="https://www.linkedin.com/in/masonletoile/" target="_blank" aria-label="LinkedIn Profile">
-          <img class="hoverColor" src="img/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/Masonlet" target="_blank" aria-label="GitHub Profile">
-          <img class="hoverColor" src="img/github.png" alt="GitHub">
-        </a>
-      </nav>
+      <p><a href="index.html" class="hover-colour">Return to home page</a></p>
     </header>
-    <div id="sections">
-      <section id="firstSection">
-        <nav id="firstNav" aria-label="Top Projects Section">
-          <a>Top Projects</a>
-        </nav>
-        <div id="firstOutputDiv">
-          <a href="https://github.com/Masonlet/TaskTracker" class="hoverColor" target="_blank">
-            <img src="img/Projects/tasktracker.png" alt="TaskTracker Project Screenshot">
-            <p>TaskTracker</p>
-          </a>
-          <a href="https://github.com/Masonlet/StarletDevelopment" class="hoverColor" target="_blank">
-            <img src="img/Projects/opengl.png" alt="OpenGL Engine Project Screenshot">
-            <p>OpenGL Engine</p>
-          </a>
-          <a href="https://github.com/Masonlet/Portfolio" class="hoverColor" target="_blank">
-            <img src="img/Projects/portfolio.png" alt="Portfolio Project Screenshot">
-            <p>Portfolio</p>
-          </a>
-          <a href="https://github.com/Masonlet/CardPortfolio" class="hoverColor" target="_blank">
-            <img src="img/Projects/card.png" alt="Card Portfolio Project Screenshot">
-            <p>Card Portfolio</p>
-          </a>
+    <div id="project-section">
+      <div id="projects-grid">
+       <div class="project-card" data-project="tasktracker">
+          <h4>TaskTracker</h4>
+          <img src="img/projects/tasktracker.png" alt="TaskTracker Project Screenshot">
         </div>
-      </section>
-      <section id="secondSection">
-        <nav id="secondNav" aria-label="Recent Projects Section">
-          <a>Recent Projects</a>
-        </nav>
-        <div id="secondOutputDiv">
-          <a href="https://github.com/Masonlet/StarletDevelopment" class="hoverColor" target="_blank">
-            <img src="img/Projects/opengl.png" alt="OpenGL Engine Project Screenshot">
-            <p>OpenGL Engine</p>
-          </a>
-          <a href="https://github.com/Masonlet/Portfolio" class="hoverColor" target="_blank">
-            <img src="img/Projects/portfolio.png" alt="Portfolio Project">
-            <p>Portfolio</p>
-          </a>
-          <a href="https://github.com/Masonlet/CardPortfolio" class="hoverColor" target="_blank">
-            <img src="img/Projects/card.png" alt="Card Portfolio Project Screenshot">
-            <p>Card Portfolio</p>
-          </a>
-          <a href="https://github.com/Masonlet/TaskTracker" class="hoverColor" target="_blank">
-            <img src="img/Projects/tasktracker.png" alt="TaskTracker Project Screenshot">
-            <p>TaskTracker</p>
-          </a>
+        <div class="project-card" data-project="opengl">
+          <h4>OpenGL Engine</h4>
+          <img src="img/projects/opengl.png" alt="OpenGL Engine Project Screenshot">
         </div>
-      </section>
+        <div class="project-card" data-project="portfolio">
+          <h4>Portfolio</h4>
+          <img src="img/projects/portfolio.png" alt="Portfolio Project Screenshot">
+        </div>
+        <div class="project-card" data-project="cardportfolio">
+          <h4>Card Portfolio</h4>
+          <img src="img/projects/card.png" alt="Card Portfolio Project Screenshot">
+        </div>
+      </div>
+      <div id="project-details" class="hidden">
+        <!-- Dynamically Filled -->
+      </div>
     </div>
   </main>
 </body>

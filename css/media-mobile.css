@@ -13,8 +13,8 @@
   }
 
   header p, 
-  #firstOutputDiv a p,
-  #secondOutputDiv a p {
+  #first-output-div a p,
+  #second-output-div a p {
     font-size: 3vw; 
     line-height: 5vw;
   }
@@ -27,24 +27,24 @@
   }
 
   /* Navigation */
-  #headerNav {
+  #header-nav {
     top: 5vh;
     right: 5%;
   }
 
-  #firstNav, 
-  #secondNav {
+  #first-nav, 
+  #second-nav {
     column-gap: 5px;
   }
 
-  #secondNav {
+  #second-nav {
     margin: 2vh 0 0;
   }
 
-  #firstNav a, 
-  #secondNav a, 
-  #linkButtons a, 
-  #emailButton {
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a, 
+  #email-button {
     font-size: 4vw;
     line-height: 4vw;
     border: 2px solid var(--colour-primary);
@@ -53,9 +53,9 @@
   }
 
   /* Image */
-  #headerNav img, 
-  #secondOutputDiv img, 
-  #firstOutputDiv img {
+  #header-nav img, 
+  #second-output-div img, 
+  #first-output-div img {
     width: 12.5vw;
     height: 12.5vw;
     padding: 2px;
@@ -63,7 +63,7 @@
     border-radius: 5px;
   }
 
-  #emailIcon {
+  #email-icon {
     display: none;
   }
 
@@ -76,49 +76,49 @@
     margin: 0 auto 5vh;
   }
 
-  #firstSection, 
-  #secondSection {
+  #first-section, 
+  #second-section {
     display: flex;
   }
 
-  #firstSection {
+  #first-section {
     flex-direction: column;
     height: 55%;
   }
 
-  #secondSection {
+  #second-section {
     flex-direction: column-reverse;
   }
 
-  #contactSection {
+  #contact-section {
     display: flex;
     flex-direction: column;
   }
 
   /* Content */
-  #firstOutput, 
-  #secondOutput, 
-  #firstOutputDiv input, 
-  #firstOutputDiv textArea, 
-  #skillsDiv {
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
     font-size: 2.75vmin;
     line-height: 3.75vmin;
   }
 
-  #firstOutputDiv, 
-  #secondOutputDiv {
+  #first-output-div, 
+  #second-output-div {
     margin: 2vh 0 0;
   }
 
-  #firstOutputDiv a, 
-  #firstOutputDiv a img, 
-  #secondOutputDiv a, 
-  #secondOutputDiv a img {
+  #first-output-div a, 
+  #first-output-div a img, 
+  #second-output-div a, 
+  #second-output-div a img {
     border-radius: 10px;
   }
 
-  #secondOutputDiv, 
-  #firstOutputDiv {
+  #second-output-div, 
+  #first-output-div {
     display: flex;
     justify-content: space-evenly;
   }
@@ -126,7 +126,7 @@
   /* Forms */
   input, 
   textarea, 
-  .emailSubmit {
+  .email-submit {
     width: 100%;
     padding: 4px;
   }
@@ -135,12 +135,12 @@
     height: 8vh;
   }
 
-  .emailInput {
+  .email-input {
     margin: 1vh 0;
   }
 
   /* Other */
-  #linkButtons a {
+  #link-buttons a {
     margin-top: 1vh;
     margin-left: auto;
     margin-right: auto;
@@ -152,8 +152,8 @@
     padding: 10px;
   }
 
-  .imageOut, 
-  #skillsDiv {
+  .image-out, 
+  #skills-div {
     gap: 5vw;
   }
 }
@@ -161,15 +161,15 @@
 /* Landscope Mobile */
 @media (max-height: 430px) and (max-width: 789px){
   /* Images */
-  #emailIcon {
+  #email-icon {
     display: inline-block !important;
   }
 
   /* Navigation */
-  #firstNav a, 
-  #secondNav a, 
-  #linkButtons a,
-  #emailButton {
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a,
+  #email-button {
     font-size: 2.5vmin;
     line-height: 3.5vmin;
     border: 2px solid var(--colour-primary);
@@ -182,21 +182,21 @@
     flex-direction: row !important;
   }
 
-  #secondSection {
+  #second-section {
     flex-direction: column !important;
   }
 
-  #firstSection, 
-  #secondSection {
+  #first-section, 
+  #second-section {
     width: 42vw !important;
   }
 
   /* Content */
-  #firstOutput, 
-  #secondOutput, 
-  #firstOutputDiv input, 
-  #firstOutputDiv textArea, 
-  #skillsDiv {
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
     font-size: 2.5vmin !important;
     line-height: 2.5vmin !important;
   }
@@ -214,8 +214,8 @@
   }
 
   header p, 
-  #firstOutputDiv a p,
-  #secondOutputDiv a p {
+  #first-output-div a p,
+  #second-output-div a p {
     font-size: 2.5vw;
     line-height: 4vw;
   }
@@ -228,14 +228,14 @@
   }
 
   /* Navigation */
-  #headerNav {
+  #header-nav {
     right: 7%;
   }
   
-  #firstNav a, 
-  #secondNav a, 
-  #linkButtons a, 
-  #emailButton {
+  #first-nav a, 
+  #second-nav a, 
+  #link-buttons a, 
+  #email-button {
     font-size: 3.5vmin;
     line-height: 3.5vmin;
     border: 2px solid var(--colour-primary);
@@ -244,13 +244,13 @@
   }
 
   /* Images */
-  #emailIcon {
+  #email-icon {
     display: inline-block !important;
   }
 
-  #headerNav img, 
-  #secondOutputDiv img, 
-  #firstOutputDiv img {
+  #header-nav img, 
+  #second-output-div img, 
+  #first-output-div img {
     padding: 2px;
     width: 8vw;
     height: 8vw;
@@ -264,21 +264,21 @@
     flex-direction: row !important;
   }
 
-  #firstSection, 
-  #secondSection {
+  #first-section, 
+  #second-section {
     width: 42vw !important;
   }
 
-  #secondSection {
+  #second-section {
     flex-direction: column !important;
   }
 
   /* Content */
-  #firstOutput, 
-  #secondOutput, 
-  #firstOutputDiv input, 
-  #firstOutputDiv textArea, 
-  #skillsDiv {
+  #first-output, 
+  #second-output, 
+  #first-output-div input, 
+  #first-output-div textarea, 
+  #skills-div {
     font-size: 2.25vmin !important;
     line-height: 2.25vmin !important;
   }
@@ -288,8 +288,8 @@
     width: 5vw !important;
     height: 6vw !important;
   }
-  .imageOut, 
-  #skillsDiv {
+  .image-out, 
+  #skills-div {
     gap: 1vw;
   }
 }
