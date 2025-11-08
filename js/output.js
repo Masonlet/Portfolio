@@ -1,8 +1,8 @@
 //Variables
 const TYPING_SPEED = 20;
-const HOME_IMAGE_PATHS = {
-  html: `img/languages/html.png`, css: `img/languages/css.png`, js: `img/languages/js.png`,
-  java: `img/languages/java.png`, cpp: `img/languages/cpp.png`, cs: `img/languages/cs.png`
+const IMAGE_PATHS = {
+  html: `img/languages/html.png`, css: `img/languages/css.png`, js: `img/languages/js.png`, 
+  python: `img/languages/python.png`, java: `img/languages/java.png`, cpp: `img/languages/cpp.png`, cs: `img/languages/cs.png`
 };  
 const SECTIONS = [`about`, `skills`, `contacts`];
 const output = { firstOutput: null, secondOutput: null }
@@ -50,9 +50,9 @@ function updateState(key, value) {
 function createSkills() {
   if(content.first.skills) return content.first.skills;
 
-  const createImage = type => `<img src="${HOME_IMAGE_PATHS[type]}" alt="Logo of ${type}" class="language" loading="lazy">`;
+  const createImage = type => `<img src="${IMAGE_PATHS[type]}" alt="Logo of ${type}" class="language" loading="lazy">`;
   const frontEndImages = [`html`, `css`, `js`].map(createImage).join(``);
-  const backEndImages = [`java`, `cpp`, `cs`].map(createImage).join(``);
+  const backEndImages = [`java`, `cpp`, `cs`, 'python'].map(createImage).join(``);
 
   content.first.skills = `<div id="skills-div">Front-end languages<div class = "image-out">${frontEndImages}</div>Back-end languages<div class ="image-out">${backEndImages}</div></div>`;
   return content.first.skills;
@@ -160,7 +160,7 @@ window.addEventListener(`load`, async () => {
   const homePage = document.getElementById(`home-page`);
   if(!homePage) return;
 
-  await preloadImages(HOME_IMAGE_PATHS);
+  await preloadImages(IMAGE_PATHS);
   let state = createState();
   updateState(`currentSection`, ``);
   updateState(`state`, state);
