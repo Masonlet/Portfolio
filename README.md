@@ -14,8 +14,8 @@ Personal Development Portfolio showcasing my projects, skills, and contact infor
 ## Building the Project
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Masonlet/Portfolio.git
-cd Portfolio
+git clone https://github.com/masonlet/portfolio.git
+cd portfolio
 ```
 
 ### 2. Open 'index.html' in your browser (or local server)
