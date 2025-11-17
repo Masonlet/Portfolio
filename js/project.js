@@ -1,4 +1,11 @@
 const projectData = {
+  'starlet-setup': {
+    title: 'Starlet Setup',
+    description: 'Starlet Setup is a lightweight Python utility to quickly clone, configure, and build CMake projects — from single repos to full mono-repos.',
+    image: 'img/projects/starlet-setup.png',
+    github: 'https://github.com/masonlet/starlet-setup',
+    languages: ['python']
+  },
   'tasktracker': {
     title: 'Task Tracker',
     description: 'TaskTracker is a lightweight tool for Windows 10 and 11 that adds task status options to the right-click context menu of folders.',
