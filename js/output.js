@@ -1,8 +1,8 @@
 //Variables
 const TYPING_SPEED = 20;
 const IMAGE_PATHS = {
-  html: `img/languages/html.png`, css: `img/languages/css.png`, js: `img/languages/js.png`, 
-  python: `img/languages/python.png`, java: `img/languages/java.png`, cpp: `img/languages/cpp.png`, cs: `img/languages/cs.png`
+  html: `img/tech/html.png`, css: `img/tech/css.png`, js: `img/tech/js.png`, 
+  python: `img/tech/python.png`, java: `img/tech/java.png`, cpp: `img/tech/cpp.png`, cs: `img/tech/cs.png`
 };  
 const SECTIONS = [`about`, `skills`, `contacts`];
 const output = { firstOutput: null, secondOutput: null }
@@ -12,7 +12,7 @@ const content = {
             I am deeply invested in learning, problem-solving and exploring the fascinating world of programming.
             While I have not yet committed to a specific specialization, my current focus is broadening my knowledge and skills across as many areas as possible.
             I hope you enjoy learning about my projects and getting to know me.<br><br>
-            Throughout my time at Fanshawe I have completed multiple projects that have spanned a   cross various programs and languages,
+            Throughout my time at Fanshawe I have completed multiple projects that have spanned across various programs and languages,
             giving me a good hands-on experience in different areas of computer science.
             These projects have allowed me to translate theoretical knowledge into practical solutions for real-world problems,
             ranging from creating CRUD applications to developing mathematical expression evaluators.<br><br>
@@ -50,7 +50,7 @@ function updateState(key, value) {
 function createSkills() {
   if(content.first.skills) return content.first.skills;
 
-  const createImage = type => `<img src="${IMAGE_PATHS[type]}" alt="Logo of ${type}" class="language" loading="lazy">`;
+  const createImage = type => `<img src="${IMAGE_PATHS[type]}" alt="Logo of ${type}" class="tech" loading="lazy">`;
   const frontEndImages = [`html`, `css`, `js`].map(createImage).join(``);
   const backEndImages = [`java`, `cpp`, `cs`, 'python'].map(createImage).join(``);
 
