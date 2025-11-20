@@ -50,7 +50,7 @@ function updateState(key, value) {
 function createSkills() {
   if(content.first.skills) return content.first.skills;
 
-  const createImage = type => `<img src="${IMAGE_PATHS[type]}" alt="Logo of ${type}" class="language" loading="lazy">`;
+  const createImage = type => `<img src="${IMAGE_PATHS[type]}" alt="Logo of ${type}" class="tech" loading="lazy">`;
   const frontEndImages = [`html`, `css`, `js`].map(createImage).join(``);
   const backEndImages = [`java`, `cpp`, `cs`, 'python'].map(createImage).join(``);
 

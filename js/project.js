@@ -4,21 +4,21 @@ const projectData = {
     description: 'Starlet Setup is a lightweight Python utility to quickly clone, configure, and build CMake projects — from single repos to full mono-repos.',
     image: 'img/projects/starlet-setup.png',
     github: 'https://github.com/masonlet/starlet-setup',
-    tech: ['python']
+    tech: ['python', 'cmake', 'pytest', 'pip', 'pypi']
   },
   'tasktracker': {
     title: 'Task Tracker',
     description: 'TaskTracker is a lightweight tool for Windows 10 and 11 that adds task status options to the right-click context menu of folders.',
     image: 'img/projects/tasktracker.png',
     github: 'https://github.com/masonlet/tasktracker',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake', `googletest`]
   },
   'opengl': {
     title: 'C++ OpenGL Engine',
     description: 'A C++ OpenGL engine ecosystem.',
     image: 'img/projects/opengl.png',
     github: 'https://github.com/masonlet/starletdevelopment',
-    tech: ['cpp']
+    tech: ['cpp', 'opengl', 'cmake', 'glfw']
   },
   'portfolio': {
     title: 'Portfolio',
@@ -32,35 +32,35 @@ const projectData = {
     description: 'A Python utility to explore and visualize GitHub repositories and their activity.',
     image: 'img/projects/githubvisualizer.png',
     github: 'https://github.com/masonlet/githubvisualizer',
-    tech: ['python']
+    tech: ['python', 'pytest', 'pip']
   },
   'imagesandbox': {
     title: 'Image Sandbox',
     description: 'A C++ playground for experimenting with images loaded using StarletSerializer.',
     image: 'img/projects/imagesandbox.png',
     github: 'https://github.com/masonlet/starletimagesandbox',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake']
   },
   'samples': {
     title: 'Starlet Samples',
     description: 'A repository for demonstrating the Starlet Engine, including sample scenes, meshes, textures, and shaders.',
     image: 'img/projects/samples.png',
     github: 'https://github.com/masonlet/starletsamples',
-    tech: ['cpp']
+    tech: ['cpp', 'opengl', 'glfw', 'cmake']
   },
   'noisesandbox': {
     title: 'Noise Sandbox',
     description: 'A C++ playground for learning and experimenting with noise algorithms.',
     image: 'img/projects/noise.png',
     github: 'https://github.com/masonlet/starletnoisesandbox',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake']
   },
   'starter': {
     title: 'Starlet Starter',
     description: 'A Template for Starlet Game Projects.',
     image: 'img/projects/starter.png',
     github: 'https://github.com/masonlet/starletstarter',
-    tech: ['cpp']
+    tech: ['cpp', 'opengl', 'glfw', 'cmake']
   },
   'cardportfolio': {
     title: 'Card Portfolio',
@@ -74,62 +74,65 @@ const projectData = {
     description: 'Graphics loading & management library for Starlet projects.',
     image: 'img/projects/graphics.png',
     github: 'https://github.com/masonlet/starletgraphics',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake']
   },
   'serializer': {
     title: 'Starlet Serializer',
     description: 'Serialization library for Starlet projects to handle both data reading and writing.',
     image: 'img/projects/serializer.png',
     github: 'https://github.com/masonlet/starletserializer',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake', `googletest`]
   },
   'engine': {
     title: 'Starlet Engine',
     description: 'Modular OpenGL engine written in C++.',
     image: 'img/projects/engine.png',
     github: 'https://github.com/masonlet/starletengine',
-    tech: ['cpp']
+    tech: ['cpp', 'opengl', 'glfw', 'cmake']
   },
   'scene': {
     title: 'Starlet Scene',
     description: 'ECS-based scene & scene management library for Starlet projects.',
     image: 'img/projects/scene.png',
     github: 'https://github.com/masonlet/starletscene',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake']
   },
   'logger': {
     title: 'Starlet Logger',
     description: 'Logging library for Starlet projects.',
     image: 'img/projects/logger.png',
     github: 'https://github.com/masonlet/starletlogger',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake', `googletest`]
   },
   'controls': {
     title: 'Starlet Controls',
     description: 'Input management library for Starlet projects.',
     image: 'img/projects/controls.png',
     github: 'https://github.com/masonlet/starletcontrols',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake']
   },
   'math': {
     title: 'Starlet Math',
     description: 'A lightweight header-only math library for Starlet projects.',
     image: 'img/projects/math.png',
     github: 'https://github.com/masonlet/starletmath',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake', `googletest`]
   },
   'tests': {
     title: 'Starlet Tests',
     description: 'A repository containing unit tests for Starlet libaries using Goolge Test(gtest).',
     image: 'img/projects/tests.png',
     github: 'https://github.com/masonlet/starlettests',
-    tech: ['cpp']
+    tech: ['cpp', 'cmake', `googletest`]
   },
 };
 
 const IMAGE_PATHS = {
   html: `img/tech/html.png`, css: `img/tech/css.png`, js: `img/tech/js.png`, 
-  python: `img/tech/python.png`, java: `img/tech/java.png`, cpp: `img/tech/cpp.png`, cs: `img/tech/cs.png`
+  python: `img/tech/python.png`, java: `img/tech/java.png`, cpp: `img/tech/cpp.png`, cs: `img/tech/cs.png`,
+  opengl: `img/tech/opengl.png`, glfw: `img/tech/glfw.png`,
+  cmake: `img/tech/cmake.png`, googletest: `img/tech/googletest.png`,
+  pytest: `img/tech/pytest.png`, pip: `img/tech/pip.png`, pypi: `img/tech/pypi.png`
 };  
 
 const projectCards = document.querySelectorAll('.project-card');
@@ -141,7 +144,7 @@ function createTechIcons(icons){
   if (!icons || icons.length === 0) return '';
 
   const iconData = icons
-    .map(lang => `<img src="${IMAGE_PATHS[lang]}" alt="${lang}" class="language-icon" loading="lazy">`)
+    .map(lang => `<img src="${IMAGE_PATHS[lang]}" alt="${lang}" class="tech-icon" loading="lazy">`)
     .join('');
 
   return `<div class="project-tech">${iconData}</div>`;
