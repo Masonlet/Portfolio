@@ -20,6 +20,12 @@ cd portfolio
 
 # Install and start
 npm install
+```
+
+Create `.env` file from `.env.example` and add your Resend API key.
+
+```bash
+# Start Server
 npm start
 ```
 
