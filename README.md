@@ -6,7 +6,6 @@ Personal Development Portfolio showcasing my projects, skills, and contact infor
 - [**masonletoile.com**](https://masonletoile.com)
 
 ## 🛠️ Tech Stack
-- Node.js + Express
 - HTML5  
 - CSS3
 - JavaScript
