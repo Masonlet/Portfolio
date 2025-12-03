@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <script type="module" src="js/output.js"></script>
+  <script type="module" src="js/contact.js"></script>
 </head>
 <body>
   <main id="contact-page">
@@ -28,10 +28,7 @@
             <a>Email Form</a>
           </nav>
           <div id="first-output-div">
-            <form action="https://api.staticforms.xyz/submit" method="post">
-              <input type="hidden" name="accessKey" value="38b2bd3c-be91-4e04-a8b1-f14c23876ce4"> 
-              <input type="hidden" name="redirectTo" value="https://masonletoile.com/contacts.html">
-
+            <form id="contact-form">
               <label for="email">Email Address</label>
               <input type="email" id="email" name="email" class="email-input" placeholder="Enter email address.." required>
 
@@ -41,9 +38,8 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" class="email-input" placeholder="Enter message.." required></textarea>
 
-              <input type="text" name="honeypot" style="display: none;">
-
               <input type="submit" value="Send Email" class="hover-colour email-submit">
+              <div id="form-status"></div>
             </form>
           </div>
       </section>
