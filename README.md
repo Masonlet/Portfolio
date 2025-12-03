@@ -4,9 +4,9 @@ Personal Development Portfolio showcasing my projects, skills, and contact infor
 ## 🔗 **Website**: 
 - [**masonletoile.ca**](https://masonletoile.ca)
 - [**masonletoile.com**](https://masonletoile.com)
-- [**masonletoile.online**](https://masonletoile.online)
 
 ## 🛠️ Tech Stack
+- Node.js + Express
 - HTML5  
 - CSS3
 - JavaScript
@@ -14,8 +14,19 @@ Personal Development Portfolio showcasing my projects, skills, and contact infor
 ## Building the Project
 ### 1. Clone the Repository
 ```bash
+# Clone Portfolio
 git clone https://github.com/masonlet/portfolio.git
 cd portfolio
+
+# Install and start
+npm install
 ```
 
-### 2. Open 'index.html' in your browser (or local server)
+Create `.env` file from `.env.example` and add your Resend API key.
+
+```bash
+# Start Server
+npm start
+```
+
+### 2. Open 'http://localhost:3000' in your browser
