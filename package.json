@@ -5,6 +5,7 @@
   "author": "Mason L'Etoile",
   "license": "MIT",
   "dependencies": {
-    "resend": "^4.0.1"
+    "resend": "^4.0.1",
+    "vite": "^7.2.6"
   }
 }
