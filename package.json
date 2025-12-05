@@ -4,7 +4,13 @@
   "description": "Mason L'Etoile's portfolio website",
   "author": "Mason L'Etoile",
   "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "resend": "^4.0.1"
+    "resend": "^4.0.1",
+    "vite": "^7.2.6"
   }
 }

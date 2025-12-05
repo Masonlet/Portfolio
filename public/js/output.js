@@ -1,8 +1,13 @@
 //Variables
 const TYPING_SPEED = 20;
 const IMAGE_PATHS = {
-  html: `img/tech/html.png`, css: `img/tech/css.png`, js: `img/tech/js.png`, 
-  python: `img/tech/python.png`, java: `img/tech/java.png`, cpp: `img/tech/cpp.png`, cs: `img/tech/cs.png`
+html: new URL(`/img/tech/html.png`, import.meta.url).href, 
+  css: new URL(`/img/tech/css.png`, import.meta.url).href, 
+  js: new URL(`/img/tech/js.png`, import.meta.url).href,
+  python: new URL(`/img/tech/python.png`, import.meta.url).href, 
+  java: new URL(`/img/tech/java.png`, import.meta.url).href, 
+  cpp: new URL(`/img/tech/cpp.png`, import.meta.url).href, 
+  cs: new URL(`/img/tech/cs.png`, import.meta.url).href
 };  
 const SECTIONS = [`about`, `skills`, `contacts`];
 const output = { firstOutput: null, secondOutput: null }
@@ -64,13 +69,13 @@ function preloadImages(images) {
       return new Promise((resolve, reject) => {
         const img = new Image();
         img.onload = resolve;
-        img.onerror = reject;
+        img.onerror = () => reject(new Error(`Failed to load image: ${path}`));
         img.src = path;
       });
     })
   ).catch(error => {
-    console.error(`Failed to load images: ${error}`);
-  })
+    console.error(error);
+  });
 }
 
 //Typewriter Functions
