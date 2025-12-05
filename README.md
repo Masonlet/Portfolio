@@ -9,6 +9,7 @@ Personal Development Portfolio showcasing my projects, skills, and contact infor
 - HTML5  
 - CSS3
 - JavaScript
+- Vite
 
 ## Building the Project
 ### 1. Clone the Repository
@@ -23,9 +24,21 @@ npm install
 
 Create `.env` file from `.env.example` and add your Resend API key.
 
+
+### Run Locally
 ```bash
-# Start Server
-npm start
+# Start development server
+npm run dev
 ```
 
-### 2. Open 'http://localhost:3000' in your browser
+#### Open https://localhost:5173 (or the address shown in your terminal) in your browser.
+
+### Build for Production
+```bash
+# Start production server
+
+npm run build
+npm run preview
+```
+
+#### Open https://localhost:4173 (or the address shown in your terminal) in your browser.
