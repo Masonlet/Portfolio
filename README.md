@@ -1,15 +1,33 @@
 # Portfolio
-Personal Development Portfolio showcasing my projects, skills, and contact information in a responsive and minimal design.
+Personal development portfolio showcasing my projects, skills, and contact information in a responsive and minimal design.
+
+![Vite](https://img.shields.io/badge/Vite-7.2.6-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+![Portfolio Screenshot](./images/portfolio.png)
+
+## Features
+- Responsive design with HTML, CSS, and JavaScript.
+- Contact form using Resend API.
+- Project showcase with image previews, tech stacks, and GitHub links.
+- Typewriter-style introduction
 
 ## 🔗 **Website**: 
 - [**masonletoile.ca**](https://masonletoile.ca)
 - [**masonletoile.com**](https://masonletoile.com)
 
-## 🛠️ Tech Stack
-- HTML5  
-- CSS3
-- JavaScript
-- Vite
+## Tech Stack
+<p align="left">
+  <img height="35" src="https://img.shields.io/badge/HTML5-%23E34F26?logo=html5&logoColor=white&style=for-the-badge"/>
+  <img height="35" src="https://img.shields.io/badge/CSS3-%231572B6?logo=css3&logoColor=white&style=for-the-badge"/>
+  <img height="35" src="https://img.shields.io/badge/JavaScript-%23F7DF1E?logo=javascript&logoColor=black&style=for-the-badge"/>
+  <img height="35" src="https://img.shields.io/badge/Node.js-%23339933?logo=node.js&logoColor=white&style=for-the-badge"/>
+  <img height="35" src="https://img.shields.io/badge/Vite-%2300C0FF?logo=vite&logoColor=white&style=for-the-badge"/>
+  <img height="35" src="https://img.shields.io/badge/Vercel-black?logo=vercel&logoColor=white&style=for-the-badge"/>
+  <img height="35" src="https://img.shields.io/badge/Resend-%23FFB300?logoColor=white&style=for-the-badge"/>
+</p>
+
+<br/>
 
 ## Building the Project
 ### 1. Clone the Repository
@@ -22,8 +40,8 @@ cd portfolio
 npm install
 ```
 
-Create `.env` file from `.env.example` and add your Resend API key.
-
+### **Resend**
+If you wish to use the contact form with resend you must create `.env` file from `.env.example` and add your Resend API key before starting your server.
 
 ### Run Locally
 ```bash
