@@ -1,7 +1,7 @@
 // Constants
 const TYPING_SPEED = 20;
 const IMAGE_PATHS = {
-html: new URL(`/img/tech/html.png`, import.meta.url).href, 
+  html: new URL(`/img/tech/html.png`, import.meta.url).href, 
   css: new URL(`/img/tech/css.png`, import.meta.url).href, 
   js: new URL(`/img/tech/js.png`, import.meta.url).href,
   python: new URL(`/img/tech/python.png`, import.meta.url).href, 

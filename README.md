@@ -42,3 +42,11 @@ npm run preview
 ```
 
 #### Open https://localhost:4173 (or the address shown in your terminal) in your browser.
+
+<br/>
+
+
+
+
+## License
+MIT License - see [LICENSE](./LICENSE) for details.

@@ -16,7 +16,7 @@ module.exports = async (req, res) => {
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'masonletoile@hotmail.com',
+      to: 'contact@masonletoile.ca',
       subject: `Contact form: ${subject}`,
       text: `From: ${email}\n\n${message}`
     });
