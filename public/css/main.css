@@ -24,3 +24,11 @@
 @import url('responsive/desktop-small.css');
 @import url('responsive/desktop-medium.css');
 @import url('responsive/desktop-large.css');
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/bebas-neue-v16-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

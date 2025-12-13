@@ -50,7 +50,7 @@
   cursor: pointer;
   transition: transform 0.2s ease;
   pointer-events: auto;
-  max-height: 300px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
