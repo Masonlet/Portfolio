@@ -27,9 +27,18 @@ Personal development portfolio showcasing my projects, skills, and contact infor
   <img height="35" src="https://img.shields.io/badge/Resend-%23FFB300?logoColor=white&style=for-the-badge"/>
 </p>
 
+
+
 <br/>
 
-## Building the Project
+
+
+## Deployment & Configuration
+### Prerequisites
+- npm
+- Node.js 18+ (for local development and building only)
+- Resend API key (optional, for email form on contact page)
+
 ### 1. Clone the Repository
 ```bash
 # Clone Portfolio
@@ -53,16 +62,21 @@ npm run dev
 
 ### Build for Production
 ```bash
-# Start production server
-
+# Build 
 npm run build
+
+# Preview production output locally
 npm run preview
 ```
 
 #### Open https://localhost:4173 (or the address shown in your terminal) in your browser.
 
-<br/>
+### Deployment
+The production build outputs static files to the `dist/` directory which can be hosted on any static hosting provider. Node.js is **not required** to run the deployed site.
 
+
+
+<br/>
 
 
 
